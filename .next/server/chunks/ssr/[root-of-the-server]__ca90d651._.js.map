@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":["file:///home/kmsaifullah/Desktop/projects/hevias_footwear/seller_dashboard/src/app/seller-dashboard/page.tsx"],"sourcesContent":["import { auth } from '@/auth'\nimport { redirect } from 'next/navigation'\n// import { redirect } from 'next/navigation'\n\nexport default async function Page() {\n  const session = await auth()\n  // console.log('users role::', session?.user?.role)\n  if (session?.user && session?.user?.role !== 'seller') {\n    return redirect('seller-login')\n  }\n  redirect('/seller-dashboard/dashboard')\n}\n"],"names":[],"mappings":";;;;AAAA;AACA;AAAA;;;AAGe,eAAe;IAC5B,MAAM,UAAU,MAAM,IAAA,mHAAI;IAC1B,mDAAmD;IACnD,IAAI,SAAS,QAAQ,SAAS,MAAM,SAAS,UAAU;QACrD,OAAO,IAAA,iMAAQ,EAAC;IAClB;IACA,IAAA,iMAAQ,EAAC;AACX","debugId":null}}]
+}

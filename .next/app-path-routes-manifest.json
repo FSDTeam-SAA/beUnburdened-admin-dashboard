@@ -1,0 +1,16 @@
+{
+  "/(auth)/seller-login/page": "/seller-login",
+  "/_not-found/page": "/_not-found",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/seller-dashboard/active-products/page": "/seller-dashboard/active-products",
+  "/seller-dashboard/add-product/page": "/seller-dashboard/add-product",
+  "/seller-dashboard/dashboard/page": "/seller-dashboard/dashboard",
+  "/seller-dashboard/edit-product/[id]/page": "/seller-dashboard/edit-product/[id]",
+  "/seller-dashboard/order/page": "/seller-dashboard/order",
+  "/seller-dashboard/page": "/seller-dashboard",
+  "/seller-dashboard/products/page": "/seller-dashboard/products",
+  "/seller-dashboard/sales/page": "/seller-dashboard/sales",
+  "/seller-dashboard/settings/page": "/seller-dashboard/settings"
+}
