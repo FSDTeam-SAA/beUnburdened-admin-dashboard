@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/kmsaifullah/Desktop/projects/BeUnburdened_admin_dashboard/src/app/page.tsx"],"sourcesContent":["'use client'\nimport { auth } from '@/auth'\nimport { useSession } from 'next-auth/react'\nimport { redirect } from 'next/navigation'\n\nexport default function Page() {\n  const session = useSession()\n  console.log('session user:', session)\n\n  // if (session) {\n  //   redirect('/seller-dashboard')\n  // } else {\n  //   redirect('/signin')\n  // }\n\n  // redirect('/seller-dashboard')\n}\n"],"names":[],"mappings":";;;;AAEA;AAFA;;AAKe,SAAS;IACtB,MAAM,UAAU,IAAA,4LAAU;IAC1B,QAAQ,GAAG,CAAC,iBAAiB;AAE7B,iBAAiB;AACjB,kCAAkC;AAClC,WAAW;AACX,wBAAwB;AACxB,IAAI;AAEJ,gCAAgC;AAClC","debugId":null}}]
-}

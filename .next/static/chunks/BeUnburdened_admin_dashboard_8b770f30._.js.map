@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/kmsaifullah/Desktop/projects/BeUnburdened_admin_dashboard/src/app/page.tsx"],"sourcesContent":["'use client'\nimport { auth } from '@/auth'\nimport { useSession } from 'next-auth/react'\nimport { redirect } from 'next/navigation'\n\nexport default function Page() {\n  const session = useSession()\n  console.log('session user:', session)\n\n  if (session) {\n    redirect('/admin-dashboard')\n  } else {\n    redirect('/signin')\n  }\n}\n"],"names":[],"mappings":";;;;AAEA;AACA;;AAHA;;;AAKe,SAAS;;IACtB,MAAM,UAAU,IAAA,+LAAU;IAC1B,QAAQ,GAAG,CAAC,iBAAiB;IAE7B,IAAI,SAAS;QACX,IAAA,iLAAQ,EAAC;IACX,OAAO;QACL,IAAA,iLAAQ,EAAC;IACX;AACF;GATwB;;QACN,+LAAU;;;KADJ","debugId":null}},
-    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":["file:///home/kmsaifullah/Desktop/projects/BeUnburdened_admin_dashboard/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0],"debugId":null}}]
-}

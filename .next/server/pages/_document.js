@@ -1,5 +1,5 @@
 var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/pages/_document.js")
-R.c("server/chunks/ssr/a1f0b_de7c4118._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__e6a4d965._.js")
-R.m("[project]/BeUnburdened_admin_dashboard/node_modules/next/document.js [ssr] (ecmascript)")
-module.exports=R.m("[project]/BeUnburdened_admin_dashboard/node_modules/next/document.js [ssr] (ecmascript)").exports
+R.c("server/chunks/ssr/[root-of-the-server]__67dc6a6a._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__21faab8b._.js")
+R.m(1070)
+module.exports=R.m(1070).exports
