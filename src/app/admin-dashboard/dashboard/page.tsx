@@ -1,5 +1,8 @@
 import { auth } from '@/auth'
 import { redirect } from 'next/navigation'
+import { ActiveUsers } from './_components/ActiveUsers'
+import DashboardStats from './_components/StatsCard'
+import { MessagesSection } from './_components/Contact'
 
 export default async function DashboardPage() {
   const session = await auth()
@@ -11,9 +14,10 @@ export default async function DashboardPage() {
   return (
     <div className="space-y-8">
       {/* Header */}
-      <header className="space-y-3">
-        <h1 className="text-2xl font-semibold text-[#272727]">Overview</h1>
-        <p className="text-[#595959]">Dashboard</p>
+      <header className="space-y-6">
+        <DashboardStats />
+        <ActiveUsers />
+        <MessagesSection/>
       </header>
     </div>
   )
