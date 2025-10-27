@@ -801,7 +801,7 @@ function BlogTable(param) {
     if (isLoading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$reusable$2f$TableSkeleton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-            lineNumber: 69,
+            lineNumber: 68,
             columnNumber: 12
         }, this);
     }
@@ -814,7 +814,7 @@ function BlogTable(param) {
                     children: "No blogs found"
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                    lineNumber: 75,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -822,13 +822,13 @@ function BlogTable(param) {
                     children: "Create your first blog to get started"
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                    lineNumber: 76,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-            lineNumber: 74,
+            lineNumber: 73,
             columnNumber: 7
         }, this);
     }
@@ -877,7 +877,7 @@ function BlogTable(param) {
                                         children: "Image"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 117,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -885,7 +885,7 @@ function BlogTable(param) {
                                         children: "Title"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 120,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -893,7 +893,7 @@ function BlogTable(param) {
                                         children: "Read Time"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 123,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -901,7 +901,7 @@ function BlogTable(param) {
                                         children: "Status"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 126,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -909,7 +909,7 @@ function BlogTable(param) {
                                         children: "Featured"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 129,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -917,7 +917,7 @@ function BlogTable(param) {
                                         children: "Date"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 132,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -925,18 +925,18 @@ function BlogTable(param) {
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 135,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                lineNumber: 117,
+                                lineNumber: 116,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                            lineNumber: 116,
+                            lineNumber: 115,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -956,7 +956,7 @@ function BlogTable(param) {
                                                     sizes: "64px"
                                                 }, void 0, false, {
                                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                    lineNumber: 148,
+                                                    lineNumber: 147,
                                                     columnNumber: 23
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-full h-full bg-gray-100 flex items-center justify-center text-gray-400",
@@ -965,22 +965,22 @@ function BlogTable(param) {
                                                         children: "No Image"
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                        lineNumber: 157,
+                                                        lineNumber: 156,
                                                         columnNumber: 25
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 155,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 145,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                            lineNumber: 145,
+                                            lineNumber: 144,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -992,17 +992,17 @@ function BlogTable(param) {
                                                     children: blog.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                    lineNumber: 166,
+                                                    lineNumber: 165,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 164,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                            lineNumber: 164,
+                                            lineNumber: 163,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1010,7 +1010,7 @@ function BlogTable(param) {
                                             children: blog.readTime || '-'
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                            lineNumber: 173,
+                                            lineNumber: 172,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1020,12 +1020,12 @@ function BlogTable(param) {
                                                 children: blog.status || 'draft'
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                lineNumber: 179,
+                                                lineNumber: 178,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                            lineNumber: 178,
+                                            lineNumber: 177,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1035,12 +1035,12 @@ function BlogTable(param) {
                                                 children: blog.featured ? 'Yes' : 'No'
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 191,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                            lineNumber: 191,
+                                            lineNumber: 190,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1052,7 +1052,7 @@ function BlogTable(param) {
                                             }) : '-'
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                            lineNumber: 204,
+                                            lineNumber: 203,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1068,12 +1068,12 @@ function BlogTable(param) {
                                                             className: "w-5 h-5 cursor-pointer"
                                                         }, void 0, false, {
                                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                            lineNumber: 222,
+                                                            lineNumber: 221,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                        lineNumber: 217,
+                                                        lineNumber: 216,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1084,12 +1084,12 @@ function BlogTable(param) {
                                                             className: "w-5 h-5 cursor-pointer"
                                                         }, void 0, false, {
                                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                            lineNumber: 230,
+                                                            lineNumber: 229,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                        lineNumber: 225,
+                                                        lineNumber: 224,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1100,45 +1100,45 @@ function BlogTable(param) {
                                                             className: "w-5 h-5 cursor-pointer"
                                                         }, void 0, false, {
                                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                            lineNumber: 238,
+                                                            lineNumber: 237,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                        lineNumber: 233,
+                                                        lineNumber: 232,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                                lineNumber: 216,
+                                                lineNumber: 215,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                            lineNumber: 215,
+                                            lineNumber: 214,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, blog._id, true, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                    lineNumber: 143,
+                                    lineNumber: 142,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                            lineNumber: 141,
+                            lineNumber: 140,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                    lineNumber: 115,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                lineNumber: 114,
+                lineNumber: 113,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -1152,7 +1152,7 @@ function BlogTable(param) {
                                     children: "Confirm Deletion"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                    lineNumber: 252,
+                                    lineNumber: 251,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -1163,13 +1163,13 @@ function BlogTable(param) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                    lineNumber: 253,
+                                    lineNumber: 252,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                            lineNumber: 251,
+                            lineNumber: 250,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -1182,12 +1182,12 @@ function BlogTable(param) {
                                         children: "Cancel"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                        lineNumber: 260,
+                                        lineNumber: 259,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                    lineNumber: 259,
+                                    lineNumber: 258,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1196,24 +1196,24 @@ function BlogTable(param) {
                                     children: "Confirm Delete"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                    lineNumber: 264,
+                                    lineNumber: 263,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                            lineNumber: 258,
+                            lineNumber: 257,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                    lineNumber: 250,
+                    lineNumber: 249,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                lineNumber: 249,
+                lineNumber: 248,
                 columnNumber: 7
             }, this),
             totalPages > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1231,7 +1231,7 @@ function BlogTable(param) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                lineNumber: 275,
+                                lineNumber: 274,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1239,7 +1239,7 @@ function BlogTable(param) {
                                 children: "•"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                lineNumber: 278,
+                                lineNumber: 277,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1249,13 +1249,13 @@ function BlogTable(param) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                lineNumber: 279,
+                                lineNumber: 278,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                        lineNumber: 274,
+                        lineNumber: 273,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1268,7 +1268,7 @@ function BlogTable(param) {
                                 children: "Previous"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                lineNumber: 284,
+                                lineNumber: 283,
                                 columnNumber: 13
                             }, this),
                             getPageNumbers().map((page, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1278,7 +1278,7 @@ function BlogTable(param) {
                                     children: page
                                 }, index, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                    lineNumber: 298,
+                                    lineNumber: 297,
                                     columnNumber: 15
                                 }, this)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1288,25 +1288,25 @@ function BlogTable(param) {
                                 children: "Next"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                                lineNumber: 315,
+                                lineNumber: 314,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                        lineNumber: 282,
+                        lineNumber: 281,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-                lineNumber: 273,
+                lineNumber: 272,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/blogTable.tsx",
-        lineNumber: 112,
+        lineNumber: 111,
         columnNumber: 5
     }, this);
 }

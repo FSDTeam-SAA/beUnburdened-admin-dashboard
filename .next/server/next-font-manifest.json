@@ -1,9 +1,24 @@
 {
   "app": {
+    "[project]/BeUnburdened_admin_dashboard/src/app/(auth)/signin/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
     "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     ],
+    "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/contact-management/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
     "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/service-management/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     ],
     "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/settings/page": [
