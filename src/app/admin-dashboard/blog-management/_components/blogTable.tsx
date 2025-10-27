@@ -6,7 +6,6 @@ import Image from 'next/image'
 import { Blog } from '../../../../../types/blog'
 import {
   Dialog,
-  DialogTrigger,
   DialogContent,
   DialogHeader,
   DialogTitle,
