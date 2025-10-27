@@ -27,12 +27,12 @@ const sidebarItems = [
   {
     icon: <Headphones size={20} />,
     text: 'Services Management',
-    href: '/admin-dashboard/services',
+    href: '/admin-dashboard/service-management',
   },
   {
     icon: <Radio size={20} />,
     text: 'Podcast Management',
-    href: '/admin-dashboard/podcast',
+    href: '/admin-dashboard/podcast-management',
   },
   {
     icon: <MessageSquare size={20} />,

@@ -1,10 +1,21 @@
-// ==================== FILE: components/BlogTable.tsx ====================
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { Edit, Trash2, Eye } from 'lucide-react'
 import Image from 'next/image'
 import { Blog } from '../../../../../types/blog'
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+  DialogClose,
+} from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
+import TableSkeleton from '@/components/reusable/TableSkeleton'
 
 interface BlogTableProps {
   blogs: Blog[]
@@ -33,16 +44,32 @@ export default function BlogTable({
   hasPrevPage,
   onPageChange,
 }: BlogTableProps) {
-  if (isLoading) {
-    return (
-      <div className="text-center py-8">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-        <p className="mt-2 text-gray-600">Loading blogs...</p>
-      </div>
-    )
+  const [selectedBlog, setSelectedBlog] = useState<Blog | null>(null)
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
+
+  const handleDeleteClick = (blog: Blog) => {
+    setSelectedBlog(blog)
+    setIsDialogOpen(true)
   }
 
-  if (!blogs || blogs.length === 0) {
+  const handleDeleteConfirm = () => {
+    if (selectedBlog) {
+      onDelete(selectedBlog._id)
+      setSelectedBlog(null)
+      setIsDialogOpen(false)
+    }
+  }
+
+  const handleDialogClose = () => {
+    setIsDialogOpen(false)
+    setSelectedBlog(null)
+  }
+
+  if (isLoading) {
+    return <TableSkeleton />
+  }
+
+  if (!blogs) {
     return (
       <div className="text-center py-8 text-gray-500 bg-gray-50 rounded-lg">
         <p className="text-lg">No blogs found</p>
@@ -51,39 +78,38 @@ export default function BlogTable({
     )
   }
 
-  // Generate page numbers for pagination
-  const getPageNumbers = () => {
-    const pages = []
-    const maxVisiblePages = 5
+  function getPageNumbers(): (number | string)[] {
+    const pages: (number | string)[] = []
+    const maxPagesToShow = 5
 
-    if (totalPages <= maxVisiblePages) {
+    if (totalPages <= maxPagesToShow) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i)
       }
     } else {
-      const start = Math.max(1, currentPage - 2)
-      const end = Math.min(totalPages, start + maxVisiblePages - 1)
-
-      if (start > 1) {
+      if (currentPage <= 3) {
+        for (let i = 1; i <= 3; i++) pages.push(i)
+        pages.push('...')
+        pages.push(totalPages)
+      } else if (currentPage >= totalPages - 2) {
         pages.push(1)
-        if (start > 2) pages.push('...')
-      }
-
-      for (let i = start; i <= end; i++) {
-        pages.push(i)
-      }
-
-      if (end < totalPages) {
-        if (end < totalPages - 1) pages.push('...')
+        pages.push('...')
+        for (let i = totalPages - 2; i <= totalPages; i++) pages.push(i)
+      } else {
+        pages.push(1)
+        pages.push('...')
+        pages.push(currentPage - 1)
+        pages.push(currentPage)
+        pages.push(currentPage + 1)
+        pages.push('...')
         pages.push(totalPages)
       }
     }
-
     return pages
   }
 
   return (
-    <div className="bg-white rounded-lg  border">
+    <div className="bg-white rounded-lg border">
       {/* Table */}
       <div className="overflow-x-auto">
         <table className="w-full">
@@ -152,7 +178,7 @@ export default function BlogTable({
                 <td className="px-6 py-4 whitespace-nowrap">
                   <span
                     className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                      blog.status === 'published'
+                      blog.status === 'Published'
                         ? 'bg-green-100 text-green-800'
                         : 'bg-yellow-100 text-yellow-800'
                     }`}
@@ -193,7 +219,7 @@ export default function BlogTable({
                       className="text-blue-600 hover:text-blue-800 transition-colors p-1 rounded"
                       title="View"
                     >
-                      <Eye className="w-4 h-4" />
+                      <Eye className="w-5 h-5 cursor-pointer" />
                     </button>
 
                     <button
@@ -201,21 +227,15 @@ export default function BlogTable({
                       className="text-green-600 hover:text-green-800 transition-colors p-1 rounded"
                       title="Edit"
                     >
-                      <Edit className="w-4 h-4" />
+                      <Edit className="w-5 h-5 cursor-pointer" />
                     </button>
 
                     <button
-                      onClick={() => {
-                        if (
-                          confirm('Are you sure you want to delete this blog?')
-                        ) {
-                          onDelete(blog._id)
-                        }
-                      }}
+                      onClick={() => handleDeleteClick(blog)}
                       className="text-red-600 hover:text-red-800 transition-colors p-1 rounded"
                       title="Delete"
                     >
-                      <Trash2 className="w-4 h-4" />
+                      <Trash2 className="w-5 h-5 cursor-pointer" />
                     </button>
                   </div>
                 </td>
@@ -224,6 +244,29 @@ export default function BlogTable({
           </tbody>
         </table>
       </div>
+
+      {/* Delete Confirmation Dialog */}
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Confirm Deletion</DialogTitle>
+            <DialogDescription>
+              Are you sure you want to delete the blog titled &quot;
+              {selectedBlog?.title}&quot;? This action cannot be undone.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="outline" onClick={handleDialogClose}>
+                Cancel
+              </Button>
+            </DialogClose>
+            <Button variant="destructive" onClick={handleDeleteConfirm}>
+              Confirm Delete
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       {/* Pagination */}
       {totalPages > 0 && (

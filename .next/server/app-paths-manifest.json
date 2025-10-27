@@ -1,7 +1,15 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin-dashboard/blog-management/add/page": "app/admin-dashboard/blog-management/add/page.js",
   "/admin-dashboard/blog-management/edit/[id]/page": "app/admin-dashboard/blog-management/edit/[id]/page.js",
   "/admin-dashboard/blog-management/page": "app/admin-dashboard/blog-management/page.js",
   "/admin-dashboard/dashboard/page": "app/admin-dashboard/dashboard/page.js",
+  "/admin-dashboard/podcast-management/add/page": "app/admin-dashboard/podcast-management/add/page.js",
+  "/admin-dashboard/podcast-management/edit/[id]/page": "app/admin-dashboard/podcast-management/edit/[id]/page.js",
+  "/admin-dashboard/podcast-management/page": "app/admin-dashboard/podcast-management/page.js",
+  "/admin-dashboard/service-management/add/page": "app/admin-dashboard/service-management/add/page.js",
+  "/admin-dashboard/service-management/edit/[id]/page": "app/admin-dashboard/service-management/edit/[id]/page.js",
+  "/admin-dashboard/service-management/page": "app/admin-dashboard/service-management/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

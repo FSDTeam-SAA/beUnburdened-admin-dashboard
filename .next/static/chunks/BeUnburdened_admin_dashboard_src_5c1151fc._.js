@@ -522,7 +522,7 @@ const Toolbar = (param)=>{
     let { editor } = param;
     if (!editor) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "border border-gray-300 border-b-0 rounded-t-md p-2 flex flex-wrap gap-1",
+        className: "border border-gray-300 border-b-0 rounded-t-md p-2 flex flex-wrap gap-1 bg-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                 onChange: (e)=>e.target.value ? editor.chain().focus().setHeading({
@@ -751,21 +751,28 @@ function TiptapEditor(param) {
         editor
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "border border-gray-300 rounded-md",
+        className: "border border-gray-300 rounded-md flex flex-col",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Toolbar, {
                 editor: editor
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/TiptapEditor.tsx",
-                lineNumber: 135,
+                lineNumber: 136,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f40$tiptap$2f$react$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["EditorContent"], {
-                editor: editor,
-                className: "p-4 min-h-[150px] prose max-w-none [&_.ProseMirror]:outline-none"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex-1 overflow-y-auto max-h-[170px]",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f40$tiptap$2f$react$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["EditorContent"], {
+                    editor: editor,
+                    className: "p-4 prose max-w-none [&_.ProseMirror]:outline-none"
+                }, void 0, false, {
+                    fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/TiptapEditor.tsx",
+                    lineNumber: 140,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/blog-management/_components/TiptapEditor.tsx",
-                lineNumber: 136,
+                lineNumber: 139,
                 columnNumber: 7
             }, this)
         ]

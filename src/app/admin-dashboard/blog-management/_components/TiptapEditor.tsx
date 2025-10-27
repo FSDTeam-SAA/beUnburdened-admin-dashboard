@@ -14,7 +14,7 @@ const Toolbar = ({ editor }: { editor: any }) => {
   if (!editor) return null
 
   return (
-    <div className="border border-gray-300 border-b-0 rounded-t-md p-2 flex flex-wrap gap-1">
+    <div className="border border-gray-300 border-b-0 rounded-t-md p-2 flex flex-wrap gap-1 bg-white">
       <select
         onChange={(e) =>
           e.target.value
@@ -131,12 +131,17 @@ export default function TiptapEditor({ content, onChange }: TiptapEditorProps) {
   }, [content, editor])
 
   return (
-    <div className="border border-gray-300 rounded-md">
+    <div className="border border-gray-300 rounded-md flex flex-col">
+      {/* Toolbar */}
       <Toolbar editor={editor} />
-      <EditorContent
-        editor={editor}
-        className="p-4 min-h-[150px] prose max-w-none [&_.ProseMirror]:outline-none"
-      />
+
+      {/* Editor content with fixed height and scroll */}
+      <div className="flex-1 overflow-y-auto max-h-[170px]">
+        <EditorContent
+          editor={editor}
+          className="p-4 prose max-w-none [&_.ProseMirror]:outline-none"
+        />
+      </div>
     </div>
   )
 }

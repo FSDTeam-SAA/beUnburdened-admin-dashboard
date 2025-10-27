@@ -101,6 +101,42 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/admin-dashboard">
 }
 
+// Validate ../../src/app/admin-dashboard/podcast-management/add/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin-dashboard/podcast-management/add/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/podcast-management/add">
+}
+
+// Validate ../../src/app/admin-dashboard/podcast-management/edit/[id]/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin-dashboard/podcast-management/edit/[id]/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/podcast-management/edit/[id]">
+}
+
+// Validate ../../src/app/admin-dashboard/podcast-management/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin-dashboard/podcast-management/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/podcast-management">
+}
+
+// Validate ../../src/app/admin-dashboard/service-management/add/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin-dashboard/service-management/add/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/service-management/add">
+}
+
+// Validate ../../src/app/admin-dashboard/service-management/edit/[id]/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin-dashboard/service-management/edit/[id]/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/service-management/edit/[id]">
+}
+
+// Validate ../../src/app/admin-dashboard/service-management/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin-dashboard/service-management/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/service-management">
+}
+
 // Validate ../../src/app/admin-dashboard/settings/page.tsx
 {
   const handler = {} as typeof import("../../src/app/admin-dashboard/settings/page.js")
