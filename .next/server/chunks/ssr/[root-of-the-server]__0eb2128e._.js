@@ -150,7 +150,7 @@ const authConfig = {
                 }
             },
             async authorize (credentials) {
-                const res = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000/api/v1")}/auth/login`, {
+                const res = await fetch(`${("TURBOPACK compile-time value", "https://beunberdened-backend.onrender.com/api/v1")}/auth/login`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

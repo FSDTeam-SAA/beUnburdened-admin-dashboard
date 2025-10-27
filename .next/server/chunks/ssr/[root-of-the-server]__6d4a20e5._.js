@@ -401,7 +401,7 @@ const useGetUserProfile = ()=>{
         ],
         queryFn: async ()=>{
             if (!token) throw new Error('No access token found');
-            const res = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000/api/v1")}/profile/me`, {
+            const res = await fetch(`${("TURBOPACK compile-time value", "https://beunberdened-backend.onrender.com/api/v1")}/profile/me`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 },
