@@ -1,4 +1,3 @@
-// ==================== FILE: components/BlogForm.tsx ====================
 'use client'
 
 import React, { useState, useEffect } from 'react'
@@ -17,8 +16,7 @@ const blogSchema = z.object({
   title: z.string().min(1, 'Title is required'),
   readTime: z.string().min(1, 'Read time is required'),
   description: z.string().min(1, 'Description is required'),
-  status: z.enum(['draft', 'published']),
-  tags: z.array(z.string()).optional(),
+  status: z.enum(['Draft', 'Published', 'Pending']),
 })
 
 export type BlogFormData = z.infer<typeof blogSchema>
@@ -40,8 +38,6 @@ export default function BlogForm({
     blog?.uploadPhoto || ''
   )
   const [imageFile, setImageFile] = useState<File | null>(null)
-  const [tagInput, setTagInput] = useState('')
-  const [tags, setTags] = useState<string[]>(blog?.tags || [])
 
   const {
     register,
@@ -56,8 +52,7 @@ export default function BlogForm({
       title: blog?.title || '',
       readTime: blog?.readTime || '',
       description: blog?.description || '',
-      status: blog?.status || 'draft',
-      tags: blog?.tags || [],
+      status: (blog?.status as 'Draft' | 'Published' | 'Pending') || 'Draft',
     },
   })
 
@@ -67,40 +62,32 @@ export default function BlogForm({
         title: blog.title || '',
         readTime: blog.readTime || '',
         description: blog.description || '',
-        status: blog.status || 'draft',
-        tags: blog.tags || [],
+        status: (blog.status as 'Draft' | 'Published' | 'Pending') || 'Draft',
       })
       setImagePreview(blog.uploadPhoto || '')
-      setTags(blog.tags || [])
     }
   }, [blog, reset])
 
-  useEffect(() => {
-    setValue('tags', tags)
-  }, [tags, setValue])
-
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
-    if (file) {
-      // Validate file type
-      if (!file.type.startsWith('image/')) {
-        alert('Please select an image file')
-        return
-      }
+    if (!file) return
 
-      // Validate file size (5MB max)
-      if (file.size > 5 * 1024 * 1024) {
-        alert('Image size should be less than 5MB')
-        return
-      }
-
-      setImageFile(file)
-      const reader = new FileReader()
-      reader.onloadend = () => {
-        setImagePreview(reader.result as string)
-      }
-      reader.readAsDataURL(file)
+    if (!file.type.startsWith('image/')) {
+      alert('Please select an image file')
+      return
     }
+
+    if (file.size > 5 * 1024 * 1024) {
+      alert('Image size should be less than 5MB')
+      return
+    }
+
+    setImageFile(file)
+    const reader = new FileReader()
+    reader.onloadend = () => {
+      setImagePreview(reader.result as string)
+    }
+    reader.readAsDataURL(file)
   }
 
   const removeImage = () => {
@@ -108,32 +95,13 @@ export default function BlogForm({
     setImageFile(null)
   }
 
-  const handleAddTag = () => {
-    if (tagInput.trim() && !tags.includes(tagInput.trim())) {
-      const newTags = [...tags, tagInput.trim()]
-      setTags(newTags)
-      setTagInput('')
-    }
-  }
-
-  const handleRemoveTag = (tagToRemove: string) => {
-    setTags(tags.filter((tag) => tag !== tagToRemove))
-  }
-
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      e.preventDefault()
-      handleAddTag()
-    }
-  }
-
   const onFormSubmit = (data: BlogFormData) => {
     onSubmit(data, imageFile || undefined)
   }
 
   return (
-    <div className="space-y-6 text-gray-500">
-      <div className=" space-y-6">
+    <div className="space-y-6 text-gray-500 bg-transparent">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Title */}
         <div>
           <Label htmlFor="title" className="text-sm font-medium text-gray-700">
@@ -190,52 +158,12 @@ export default function BlogForm({
         )}
       </div>
 
-      {/* Tags */}
-      <div>
-        <Label className="text-sm font-medium text-gray-700">Tags</Label>
-        <div className="flex gap-2 mt-1">
-          <Input
-            value={tagInput}
-            onChange={(e) => setTagInput(e.target.value)}
-            onKeyPress={handleKeyPress}
-            placeholder="Add a tag and press Enter..."
-            className="flex-1"
-          />
-          <Button
-            type="button"
-            onClick={handleAddTag}
-            variant="outline"
-            disabled={!tagInput.trim()}
-          >
-            Add
-          </Button>
-        </div>
-        <div className="flex flex-wrap gap-2 mt-2">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm flex items-center gap-1"
-            >
-              {tag}
-              <button
-                type="button"
-                onClick={() => handleRemoveTag(tag)}
-                className="hover:text-red-600 transition-colors"
-              >
-                <X className="w-3 h-3" />
-              </button>
-            </span>
-          ))}
-        </div>
-        {errors.tags && (
-          <p className="text-red-500 text-sm mt-1">{errors.tags.message}</p>
-        )}
-      </div>
-
       {/* Image Upload */}
       <div>
-        <Label className="text-sm font-medium text-gray-700">Blog Image</Label>
-        <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center mt-1 hover:border-gray-400 transition-colors">
+        <Label className="text-sm font-medium text-gray-700 mb-2">
+          Blog Image
+        </Label>
+        <div className="border-2 border-dashed border-gray-300 rounded-lg p-2 text-center mt-1 hover:border-gray-400 transition-colors">
           {imagePreview ? (
             <div className="relative inline-block">
               <Image
@@ -255,7 +183,7 @@ export default function BlogForm({
             </div>
           ) : (
             <div>
-              <Upload className="w-12 h-12 mx-auto text-gray-400 mb-2" />
+              <Upload className="w-8 h-8 mx-auto text-gray-400 mb-2" />
               <p className="text-sm text-gray-500 mb-2">
                 Click to upload or drag and drop
               </p>
@@ -288,23 +216,16 @@ export default function BlogForm({
         </Label>
         <select
           {...register('status')}
-          className="w-full px-3 py-2 border border-gray-300 rounded-md mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md mt-1 focus:outline-none"
         >
-          <option value="draft">Draft</option>
-          <option value="published">Published</option>
+          <option value="Draft">Draft</option>
+          <option value="Published">Published</option>
+          <option value="Pending">Pending</option>
         </select>
       </div>
 
       {/* Form Actions */}
-      <div className="flex justify-end gap-3 pt-6 border-t">
-        <Button
-          type="button"
-          variant="outline"
-          onClick={onCancel}
-          disabled={isLoading}
-        >
-          Cancel
-        </Button>
+      <div className="flex justify-start gap-3 pt-6">
         <Button
           onClick={handleSubmit(onFormSubmit)}
           disabled={isLoading}
@@ -320,6 +241,14 @@ export default function BlogForm({
           ) : (
             'Create Blog'
           )}
+        </Button>
+        <Button
+          type="button"
+          variant="outline"
+          onClick={onCancel}
+          disabled={isLoading}
+        >
+          Cancel
         </Button>
       </div>
     </div>

@@ -34,7 +34,7 @@ export default async function RootLayout({
         <UserHeader />
 
         {/* Page Content */}
-        <div className="flex-1 p-8">{children}</div>
+        <div className="flex-1 px-8 pt-4">{children}</div>
       </main>
     </div>
   )

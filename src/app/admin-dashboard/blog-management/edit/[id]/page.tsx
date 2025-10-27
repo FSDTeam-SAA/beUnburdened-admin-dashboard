@@ -1,7 +1,6 @@
-// ==================== FILE: app/blog-management/edit/[id]/page.tsx ====================
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -9,30 +8,36 @@ import { ArrowLeft } from 'lucide-react'
 import { useGetSingleBlog, useUpdateBlog } from '@/lib/blogApi'
 import BlogForm, { BlogFormData } from '../../_components/blogForm'
 import { toast } from 'sonner'
+import { useSession } from 'next-auth/react'
 
 export default function EditBlogPage() {
   const router = useRouter()
   const params = useParams()
   const blogId = params.id as string
 
-  const { data: blogData, isLoading: isLoadingBlog } = useGetSingleBlog(blogId)
-  const { mutate: updateBlog, isPending } = useUpdateBlog()
+  const session = useSession()
+  const accessToken = session.data?.user?.accessToken || ''
+
+  const { data: blogData, isLoading: isLoadingBlog } = useGetSingleBlog(
+    blogId,
+    accessToken
+  )
+  const { mutate: updateBlog, isPending } = useUpdateBlog(accessToken)
+
+  useEffect(() => {
+    if (session.status === 'unauthenticated') {
+      router.push('/signin')
+    }
+  }, [session.status, router])
 
   const handleSubmit = (data: BlogFormData, file?: File) => {
     const formData = new FormData()
 
-    // Append form fields
     formData.append('title', data.title)
     formData.append('readTime', data.readTime)
     formData.append('description', data.description)
     formData.append('status', data.status)
 
-    // Append tags if they exist
-    if (data.tags && data.tags.length > 0) {
-      data.tags.forEach((tag) => formData.append('tags', tag))
-    }
-
-    // Append file if it exists
     if (file) {
       formData.append('uploadPhoto', file)
     }
@@ -41,6 +46,7 @@ export default function EditBlogPage() {
       { blogId, data: formData },
       {
         onSuccess: () => {
+          toast.success('Blog updated successfully!')
           router.push('/admin-dashboard/blog-management')
         },
         onError: (error) => {
@@ -68,7 +74,7 @@ export default function EditBlogPage() {
 
   if (!blogData?.blog) {
     return (
-      <div className=" bg-gray-50 flex items-center justify-center">
+      <div className="bg-gray-50 flex items-center justify-center">
         <Card className="w-full max-w-md">
           <CardContent className="pt-6 text-center">
             <div className="text-red-500 text-lg font-semibold mb-2">
@@ -77,7 +83,9 @@ export default function EditBlogPage() {
             <p className="text-gray-600 mb-4">
               The blog you&apos;re trying to edit doesn&apos;t exist.
             </p>
-            <Button onClick={() => router.push('/blog-management')}>
+            <Button
+              onClick={() => router.push('/admin-dashboard/blog-management')}
+            >
               Back to Blogs
             </Button>
           </CardContent>
@@ -87,10 +95,10 @@ export default function EditBlogPage() {
   }
 
   return (
-    <div className=" bg-gray-50">
+    <div className="bg-gray-50">
       <div className="max-w-full mx-auto">
-        {/* Header */}
-        <div className="mb-6 ">
+        <div className="mb-4 flex justify-between items-center">
+          <h1 className="text-3xl font-bold text-[#5A8DEE]">Edit Blog</h1>
           <Button
             variant="ghost"
             onClick={handleCancel}
@@ -100,11 +108,8 @@ export default function EditBlogPage() {
             <ArrowLeft className="w-4 h-4" />
             Back to Blogs
           </Button>
-          <h1 className="text-3xl font-bold text-gray-600">Edit Blog</h1>
-          <p className="text-gray-500 mt-2">Update blog information</p>
         </div>
 
-        {/* Form */}
         <Card>
           <CardHeader>
             <CardTitle className="text-gray-500">

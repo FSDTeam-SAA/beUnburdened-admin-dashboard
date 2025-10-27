@@ -1,16 +1,7 @@
 {
-  "/(auth)/forgotPassword/page": "app/(auth)/forgotPassword/page.js",
-  "/(auth)/reset-password/page": "app/(auth)/reset-password/page.js",
-  "/(auth)/signin/page": "app/(auth)/signin/page.js",
-  "/(auth)/verify-email/page": "app/(auth)/verify-email/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/admin-dashboard/blog-management/add/page": "app/admin-dashboard/blog-management/add/page.js",
   "/admin-dashboard/blog-management/edit/[id]/page": "app/admin-dashboard/blog-management/edit/[id]/page.js",
   "/admin-dashboard/blog-management/page": "app/admin-dashboard/blog-management/page.js",
   "/admin-dashboard/dashboard/page": "app/admin-dashboard/dashboard/page.js",
-  "/admin-dashboard/page": "app/admin-dashboard/page.js",
-  "/admin-dashboard/settings/page": "app/admin-dashboard/settings/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

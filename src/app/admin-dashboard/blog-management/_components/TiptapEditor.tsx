@@ -135,7 +135,7 @@ export default function TiptapEditor({ content, onChange }: TiptapEditorProps) {
       <Toolbar editor={editor} />
       <EditorContent
         editor={editor}
-        className="p-4 min-h-[250px] prose max-w-none [&_.ProseMirror]:outline-none"
+        className="p-4 min-h-[150px] prose max-w-none [&_.ProseMirror]:outline-none"
       />
     </div>
   )

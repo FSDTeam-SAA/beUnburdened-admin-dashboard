@@ -1,17 +1,29 @@
-// ==================== FILE: app/blog-management/add/page.tsx ====================
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ArrowLeft } from 'lucide-react'
 import { useAddBlog } from '@/lib/blogApi'
 import BlogForm, { BlogFormData } from '../_components/blogForm'
+import { useSession } from 'next-auth/react'
 
 export default function AddBlogPage() {
   const router = useRouter()
-  const { mutate: addBlog, isPending } = useAddBlog()
+  const session = useSession()
+  const accessToken = session.data?.user?.accessToken || ''
+
+  // pass accessToken explicitly
+  const { mutate: addBlog, isPending } = useAddBlog(accessToken)
+
+  useEffect(() => {
+    // optional: redirect to signin if no token
+    if (session.status === 'unauthenticated') {
+      router.push('/signin')
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session.status])
 
   const handleSubmit = (data: BlogFormData, file?: File) => {
     const formData = new FormData()
@@ -23,9 +35,9 @@ export default function AddBlogPage() {
     formData.append('status', data.status)
 
     // Append tags if they exist
-    if (data.tags && data.tags.length > 0) {
-      data.tags.forEach((tag) => formData.append('tags', tag))
-    }
+    // if (data.tags && data.tags.length > 0) {
+    //   data.tags.forEach((tag) => formData.append('tags', tag))
+    // }
 
     // Append file if it exists
     if (file) {
@@ -34,7 +46,7 @@ export default function AddBlogPage() {
 
     addBlog(formData, {
       onSuccess: () => {
-        router.push('/blog-management')
+        router.push('/admin-dashboard/blog-management')
       },
       onError: (error) => {
         console.error('Error adding blog:', error)
@@ -48,21 +60,23 @@ export default function AddBlogPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className=" bg-[] shadow-none">
       <div className="w-full mx-auto">
         {/* Header */}
-        <div className="mb-6">
-          <Button
-            variant="ghost"
-            onClick={handleCancel}
-            className="mb-4 flex items-center gap-2"
-            disabled={isPending}
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Blogs
-          </Button>
-          <h1 className="text-3xl font-bold text-gray-900">Add New Blog</h1>
-          <p className="text-gray-600 mt-2">Create a new blog post</p>
+        <div className="mb-4">
+          <div className="flex justify-between items-center">
+            <h1 className="text-3xl font-bold text-[#5A8DEE]">Add New Blog</h1>
+
+            <Button
+              variant="ghost"
+              onClick={handleCancel}
+              className="mb-4 flex items-center gap-2"
+              disabled={isPending}
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blogs
+            </Button>
+          </div>
         </div>
 
         {/* Form */}
@@ -70,7 +84,7 @@ export default function AddBlogPage() {
           <CardHeader>
             <CardTitle>Blog Information</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="bg-transparent">
             <BlogForm
               onSubmit={handleSubmit}
               onCancel={handleCancel}

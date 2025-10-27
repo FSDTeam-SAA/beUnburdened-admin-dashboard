@@ -1,6 +1,10 @@
 var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/auth/[...nextauth]/route.js")
-R.c("server/chunks/[root-of-the-server]__5a5dbe66._.js")
-R.c("server/chunks/a1f0b_f951035a._.js")
-R.m(43970)
-R.m(41812)
-module.exports=R.m(41812).exports
+R.c("server/chunks/a1f0b_next_1202fcc2._.js")
+R.c("server/chunks/a1f0b_next-auth_1806dd3d._.js")
+R.c("server/chunks/a1f0b_openid-client_70ee40d5._.js")
+R.c("server/chunks/a1f0b_jose_dist_node_cjs_c9fd7b90._.js")
+R.c("server/chunks/a1f0b_e922ffb7._.js")
+R.c("server/chunks/[root-of-the-server]__8fe7612d._.js")
+R.m("[project]/BeUnburdened_admin_dashboard/.next-internal/server/app/api/auth/[...nextauth]/route/actions.js [app-rsc] (server actions loader, ecmascript)")
+R.m("[project]/BeUnburdened_admin_dashboard/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/BeUnburdened_admin_dashboard/src/app/api/auth/[...nextauth]/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/BeUnburdened_admin_dashboard/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/BeUnburdened_admin_dashboard/src/app/api/auth/[...nextauth]/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

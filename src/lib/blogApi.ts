@@ -1,18 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { BlogsResponse, SingleBlogResponse } from '../../types/blog'
-import { useAuthStore } from '@/store/authStore'
 
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api/v1'
 
-// Helper function to attach token
-function getAuthHeaders(): HeadersInit {
-  const token = useAuthStore.getState().authData?.accessToken
-  return token ? { Authorization: `Bearer ${token}` } : {}
-}
-
-// Helper to handle responses
+// ✅ Helper to handle responses
 async function handleResponse(response: Response) {
   if (!response.ok) {
     const error = await response.json().catch(() => ({}))
@@ -22,41 +15,42 @@ async function handleResponse(response: Response) {
 }
 
 // ==================== GET ALL BLOGS ====================
-export const useGetBlogs = (page = 1, limit = 5) => {
+export const useGetBlogs = (accessToken: string, page = 1, limit = 10) => {
   return useQuery<BlogsResponse>({
-    queryKey: ['blogs', page, limit],
+    queryKey: ['blogs', page, limit, accessToken],
     queryFn: async () => {
       const res = await fetch(`${API_BASE_URL}/blogs?page=${page}&limit=5`, {
         credentials: 'include',
         headers: {
-          ...getAuthHeaders(),
+          Authorization: `Bearer ${accessToken}`,
         },
       })
       return handleResponse(res)
     },
+    enabled: !!accessToken,
   })
 }
 
 // ==================== GET SINGLE BLOG ====================
-export const useGetSingleBlog = (blogId?: string) => {
+export const useGetSingleBlog = (blogId?: string, accessToken?: string) => {
   return useQuery<SingleBlogResponse>({
-    queryKey: ['blog', blogId],
+    queryKey: ['blog', blogId, accessToken],
     queryFn: async () => {
       if (!blogId) return null
       const res = await fetch(`${API_BASE_URL}/blogs/${blogId}`, {
         credentials: 'include',
         headers: {
-          ...getAuthHeaders(),
+          Authorization: `Bearer ${accessToken}`,
         },
       })
       return handleResponse(res)
     },
-    enabled: !!blogId,
+    enabled: !!blogId && !!accessToken,
   })
 }
 
 // ==================== ADD BLOG ====================
-export const useAddBlog = (options?: any) => {
+export const useAddBlog = (accessToken: string, options?: any) => {
   const queryClient = useQueryClient()
 
   return useMutation({
@@ -66,7 +60,7 @@ export const useAddBlog = (options?: any) => {
         body: formData,
         credentials: 'include',
         headers: {
-          ...getAuthHeaders(),
+          Authorization: `Bearer ${accessToken}`,
         },
       })
       return handleResponse(res)
@@ -82,19 +76,18 @@ export const useAddBlog = (options?: any) => {
 }
 
 // ==================== UPDATE BLOG ====================
-export const useUpdateBlog = (options?: any) => {
+export const useUpdateBlog = (accessToken: string, options?: any) => {
   const queryClient = useQueryClient()
 
   return useMutation({
     mutationFn: async ({ blogId, data }: { blogId: string; data: any }) => {
       const res = await fetch(`${API_BASE_URL}/blogs/${blogId}`, {
         method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          ...getAuthHeaders(),
-        },
-        body: JSON.stringify(data),
         credentials: 'include',
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+        body: data, // allow FormData or JSON
       })
       return handleResponse(res)
     },
@@ -110,7 +103,7 @@ export const useUpdateBlog = (options?: any) => {
 }
 
 // ==================== DELETE BLOG ====================
-export const useDeleteBlog = () => {
+export const useDeleteBlog = (accessToken: string) => {
   const queryClient = useQueryClient()
 
   return useMutation({
@@ -119,7 +112,7 @@ export const useDeleteBlog = () => {
         method: 'DELETE',
         credentials: 'include',
         headers: {
-          ...getAuthHeaders(),
+          Authorization: `Bearer ${accessToken}`,
         },
       })
       return handleResponse(res)

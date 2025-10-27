@@ -1,7 +1,6 @@
-// ==================== FILE: app/blog-management/page.tsx ====================
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -17,6 +16,7 @@ import Image from 'next/image'
 
 import BlogTable from './blogTable'
 import { Blog } from '../../../../../types/blog'
+import { useSession } from 'next-auth/react'
 
 export default function BlogManagement() {
   const router = useRouter()
@@ -24,15 +24,27 @@ export default function BlogManagement() {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false)
   const [viewingBlog, setViewingBlog] = useState<Blog | null>(null)
 
-  // API Queries
+  const session = useSession()
+  const accessToken = session.data?.user?.accessToken || ''
+
+  // API Queries — pass accessToken explicitly
   const {
     data: blogsData,
     isLoading: blogsLoading,
     error: blogsError,
     refetch,
-  } = useGetBlogs(currentPage, 10)
+  } = useGetBlogs(accessToken, currentPage, 10)
 
-  const { mutate: deleteBlog, isPending: isDeleting } = useDeleteBlog()
+  const { mutate: deleteBlog, isPending: isDeleting } =
+    useDeleteBlog(accessToken)
+
+  useEffect(() => {
+    // if accessToken becomes available, refetch
+    if (accessToken) {
+      refetch()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [accessToken, currentPage])
 
   const handleAddBlog = () => {
     router.push('/admin-dashboard/blog-management/add')
@@ -96,7 +108,7 @@ export default function BlogManagement() {
         <div className="mb-6">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900">
+              <h1 className="text-3xl font-bold text-[#5A8DEE]">
                 Blog Management
               </h1>
               <div className="flex items-center text-sm text-gray-500 mt-2">
@@ -110,7 +122,8 @@ export default function BlogManagement() {
             <Button
               onClick={handleAddBlog}
               className="h-11 px-6 flex items-center gap-2"
-              disabled={isDeleting}
+              disabled={isDeleting || !accessToken}
+              title={!accessToken ? 'Waiting for auth...' : undefined}
             >
               <Plus className="w-4 h-4" />
               Add Blog
@@ -142,13 +155,17 @@ export default function BlogManagement() {
 
         {/* View Details Dialog */}
         <Dialog open={isDetailsOpen} onOpenChange={setIsDetailsOpen}>
-          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
-            <DialogHeader>
-              <DialogTitle>Blog Details</DialogTitle>
+          <DialogContent className="!max-w-4xl w-full h-[90vh] overflow-y-auto rounded-xl shadow-lg">
+            {/* Sticky Header */}
+            <DialogHeader className="sticky top-0 bg-white border-b">
+              <DialogTitle className="text-2xl font-semibold text-gray-900">
+                Blog Details
+              </DialogTitle>
             </DialogHeader>
+
             {viewingBlog && (
-              <div className="space-y-6">
-                {/* Header */}
+              <div className="space-y-6 py-6">
+                {/* Blog Header Info */}
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {viewingBlog.title}
@@ -189,7 +206,7 @@ export default function BlogManagement() {
                   </div>
                 </div>
 
-                {/* Image */}
+                {/* Blog Image */}
                 {viewingBlog.uploadPhoto && (
                   <div className="relative w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
                     <Image
@@ -202,7 +219,7 @@ export default function BlogManagement() {
                   </div>
                 )}
 
-                {/* Description */}
+                {/* Blog Description */}
                 <div>
                   <h4 className="font-semibold text-lg mb-3 text-gray-900">
                     Description
@@ -213,53 +230,6 @@ export default function BlogManagement() {
                       __html: viewingBlog.description,
                     }}
                   />
-                </div>
-
-                {/* Technical Details */}
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-lg mb-3 text-gray-900">
-                    Technical Details
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <span className="font-medium text-gray-600">
-                        File Type:
-                      </span>
-                      <span className="ml-2 text-gray-900">
-                        {viewingBlog.fileType}
-                      </span>
-                    </div>
-                    {viewingBlog.mimeType && (
-                      <div>
-                        <span className="font-medium text-gray-600">
-                          MIME Type:
-                        </span>
-                        <span className="ml-2 text-gray-900">
-                          {viewingBlog.mimeType}
-                        </span>
-                      </div>
-                    )}
-                    {viewingBlog.fileSize && (
-                      <div>
-                        <span className="font-medium text-gray-600">
-                          File Size:
-                        </span>
-                        <span className="ml-2 text-gray-900">
-                          {(viewingBlog.fileSize / 1024).toFixed(2)} KB
-                        </span>
-                      </div>
-                    )}
-                    {viewingBlog.uploadedAt && (
-                      <div>
-                        <span className="font-medium text-gray-600">
-                          Uploaded At:
-                        </span>
-                        <span className="ml-2 text-gray-900">
-                          {new Date(viewingBlog.uploadedAt).toLocaleString()}
-                        </span>
-                      </div>
-                    )}
-                  </div>
                 </div>
               </div>
             )}

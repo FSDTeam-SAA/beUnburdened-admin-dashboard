@@ -1,4 +1,6 @@
 'use client'
+import { useSession } from 'next-auth/react'
+import { redirect } from 'next/navigation'
 import { create } from 'zustand'
 
 type User = {
@@ -25,3 +27,13 @@ export const useAuthStore = create<AuthStore>((set) => ({
   setAuthData: (data) => set({ authData: data }),
   clearAuthData: () => set({ authData: null }),
 }))
+
+export default function Home() {
+  const session = useSession()
+
+  if (!session?.data?.user?.accessToken) {
+    redirect('/signin')
+  } else {
+    redirect('/admin-dashboard/dashboard')
+  }
+}
