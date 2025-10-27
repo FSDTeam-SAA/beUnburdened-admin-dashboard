@@ -37,7 +37,7 @@ const sidebarItems = [
   {
     icon: <MessageSquare size={20} />,
     text: 'Contact Management',
-    href: '/admin-dashboard/contact',
+    href: '/admin-dashboard/contact-management',
   },
   {
     icon: <Settings size={20} />,

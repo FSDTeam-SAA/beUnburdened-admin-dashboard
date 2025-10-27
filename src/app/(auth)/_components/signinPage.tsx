@@ -163,15 +163,15 @@ export default function SigninPage() {
             </Button>
 
             {/* Sign Up link */}
-            <p className="text-center text-sm text-gray-600 mt-5">
+            {/* <p className="text-center text-sm text-gray-600 mt-5">
               Don’t have an account?{' '}
               <Link
                 href="/signup"
                 className="text-[#71A899] font-medium hover:underline"
               >
                 Sign Up
-              </Link>
-            </p>
+              </Link> */}
+            {/* </p> */}
           </form>
         </Form>
       </div>
