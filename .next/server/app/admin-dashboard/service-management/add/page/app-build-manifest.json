@@ -1,0 +1,23 @@
+{
+  "pages": {
+    "/admin-dashboard/service-management/add/page": [
+      "static/chunks/f4e676a6825e44e8.js",
+      "static/chunks/cc6b3d070a809715.js",
+      "static/chunks/2e08522d2e2f8bd2.css",
+      "static/chunks/28b11bbf35c5bf7d.js",
+      "static/chunks/2516102b3397ddd2.js",
+      "static/chunks/85e2c49ef6124d25.js",
+      "static/chunks/1596a43b0d7ce14f.js",
+      "static/chunks/158d687ac5ec41c8.js",
+      "static/chunks/011dafdac9185016.js",
+      "static/chunks/df89202e7ca6c748.js",
+      "static/chunks/61f3ebfc7dfde8bd.js",
+      "static/chunks/58fce2ae40713d4b.js",
+      "static/chunks/8d97e0efd231807a.js",
+      "static/chunks/acc4020413d8df4a.js",
+      "static/chunks/1e0c393db4fd70c7.js",
+      "static/chunks/127a4122ccd83d52.js",
+      "static/chunks/turbopack-3f9afc403cf3e575.js"
+    ]
+  }
+}
