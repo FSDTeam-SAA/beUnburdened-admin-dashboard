@@ -1,23 +1,28 @@
 {
   "pages": {
     "/admin-dashboard/blog-management/page": [
-      "static/chunks/d839de8a30d3eb1b.js",
-      "static/chunks/4b6b921b6ea1af83.js",
-      "static/chunks/ed03d488f3ac5443.css",
-      "static/chunks/9c2ed29031fea2ae.js",
-      "static/chunks/3739626d28a28fc8.js",
-      "static/chunks/34ab5f59c703e325.js",
-      "static/chunks/b81e37b4ad6b3558.js",
-      "static/chunks/02e814fdecf51a1b.js",
-      "static/chunks/882dab695f539202.js",
-      "static/chunks/f9dfb83d0dd59786.js",
-      "static/chunks/8a41f3285e957236.js",
-      "static/chunks/638cad64980c2aa3.js",
-      "static/chunks/528950e0df699d8f.js",
-      "static/chunks/d34df1e82c691e2d.js",
-      "static/chunks/cbf1c02b4d0a7967.js",
-      "static/chunks/40e3238e501d15ea.js",
-      "static/chunks/turbopack-2ad01463b6a56b82.js"
+      "static/chunks/6d556_next_dist_693e31a7._.js",
+      "static/chunks/582e6_beUnburdened_beUnburdened-admin-dashboard_src_app_favicon_ico_mjs_18742ccb._.js",
+      "static/chunks/[root-of-the-server]__6203b98c._.css",
+      "static/chunks/6d556_305e10ff._.js",
+      "static/chunks/582e6_beUnburdened_beUnburdened-admin-dashboard_src_app_providers_tsx_8dd08187._.js",
+      "static/chunks/582e6_beUnburdened_beUnburdened-admin-dashboard_src_app_layout_tsx_7b9c1aa3._.js",
+      "static/chunks/6d556_next_dist_client_components_builtin_global-error_1a1eadb0.js",
+      "static/chunks/6d556_551e1c9e._.js",
+      "static/chunks/Desktop_all project_beUnburdened_beUnburdened-admin-dashboard_src_78b95141._.js",
+      "static/chunks/014db_beUnburdened-admin-dashboard_src_app_admin-dashboard_layout_tsx_1a1eadb0._.js",
+      "static/chunks/Desktop_all project_beUnburdened_beUnburdened-admin-dashboard_src_b33ea661._.js",
+      "static/chunks/6d556_afe006ef._.js",
+      "static/chunks/bf242_rdened-admin-dashboard_src_app_admin-dashboard_blog-management_page_tsx_ca255dfe._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_1144a99e._.js",
+      "static/chunks/6d556_next_dist_compiled_react-dom_f90e3a2e._.js",
+      "static/chunks/6d556_next_dist_compiled_next-devtools_index_9bb22a4e.js",
+      "static/chunks/6d556_next_dist_compiled_de588ef8._.js",
+      "static/chunks/6d556_next_dist_client_a97fb9fc._.js",
+      "static/chunks/6d556_next_dist_ccea8e4e._.js",
+      "static/chunks/6d556_@swc_helpers_cjs_e844cbbf._.js",
+      "static/chunks/Desktop_all project_beUnburdened_beUnburdened-admin-dashboard_a0ff3932._.js",
+      "static/chunks/turbopack-Desktop_all project_beUnburdened_beUnburdened-admin-dashboard_dc0dc8de._.js"
     ]
   }
 }
