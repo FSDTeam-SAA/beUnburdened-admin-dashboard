@@ -1,3 +1,0 @@
-module.exports=[43137,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(77853);a.n(d("[project]/Desktop/all project/beUnburdened/beUnburdened-admin-dashboard/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},27303,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(77853);a.n(d("[project]/Desktop/all project/beUnburdened/beUnburdened-admin-dashboard/node_modules/next/dist/client/components/builtin/global-error.js"))},96497,a=>{"use strict";a.i(43137);var b=a.i(27303);a.n(b)}];
-
-//# sourceMappingURL=6d556_next_dist_client_components_builtin_global-error_ea7e7676.js.map

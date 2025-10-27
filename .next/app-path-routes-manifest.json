@@ -16,6 +16,7 @@
   "/admin-dashboard/service-management/add/page": "/admin-dashboard/service-management/add",
   "/admin-dashboard/service-management/edit/[id]/page": "/admin-dashboard/service-management/edit/[id]",
   "/admin-dashboard/service-management/page": "/admin-dashboard/service-management",
+  "/admin-dashboard/settings/page": "/admin-dashboard/settings",
   "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
   "/favicon.ico/route": "/favicon.ico",
   "/page": "/"

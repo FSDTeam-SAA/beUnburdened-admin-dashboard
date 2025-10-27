@@ -37,7 +37,7 @@ export default function UserHeader() {
               </p>
             </div>
 
-            <Link href="/seller-dashboard/settings">
+            <Link href="/admin-dashboard/settings">
               <div className="relative">
                 <Image
                   src={profile?.profileImage || '/images/demoUser.png'}

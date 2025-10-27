@@ -80,12 +80,14 @@ export default function AdminSidebar() {
     <aside className="w-[260px] bg-sky-50/50 border-r border-gray-200 min-h-screen flex flex-col ">
       {/* Logo Section */}
       <div className="h-[80px] flex items-center px-6 border-b border-gray-200">
-        <div className="flex items-center gap-2">
-          <span className="text-xl text-[#5A8DEE] font-bold">
-            The <span>Unburdened</span>{' '}
-            <span className="font-normal">Mind</span>
-          </span>
-        </div>
+        <Link href="/admin-dashboard/dashboard">
+          <div className="flex items-center gap-2">
+            <span className="text-xl text-[#5A8DEE] font-bold">
+              The <span>Unburdened</span>{' '}
+              <span className="font-normal">Mind</span>
+            </span>
+          </div>
+        </Link>
       </div>
 
       {/* Navigation */}

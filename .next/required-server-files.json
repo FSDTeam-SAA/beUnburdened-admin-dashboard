@@ -103,7 +103,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/home/mehedi-hasan-shishir",
+    "outputFileTracingRoot": "/home/kmsaifullah/Desktop/projects",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -292,11 +292,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/home/mehedi-hasan-shishir"
+      "root": "/home/kmsaifullah/Desktop/projects"
     }
   },
-  "appDir": "/home/mehedi-hasan-shishir/Desktop/all project/beUnburdened/beUnburdened-admin-dashboard",
-  "relativeAppDir": "Desktop/all project/beUnburdened/beUnburdened-admin-dashboard",
+  "appDir": "/home/kmsaifullah/Desktop/projects/BeUnburdened_admin_dashboard",
+  "relativeAppDir": "BeUnburdened_admin_dashboard",
   "files": [
     ".next/routes-manifest.json",
     ".next/server/pages-manifest.json",
