@@ -1,28 +1,23 @@
 {
   "pages": {
     "/admin-dashboard/blog-management/page": [
-      "static/chunks/a1f0b_next_dist_64aed532._.js",
-      "static/chunks/BeUnburdened_admin_dashboard_src_app_favicon_ico_mjs_c7f69933._.js",
-      "static/chunks/[root-of-the-server]__08ce4369._.css",
-      "static/chunks/a1f0b_1dcf5169._.js",
-      "static/chunks/BeUnburdened_admin_dashboard_src_app_providers_tsx_6beeb53b._.js",
-      "static/chunks/BeUnburdened_admin_dashboard_src_app_layout_tsx_4571630b._.js",
-      "static/chunks/a1f0b_next_dist_client_components_builtin_global-error_485b5dcc.js",
-      "static/chunks/a1f0b_7fceef5f._.js",
-      "static/chunks/BeUnburdened_admin_dashboard_src_e8ae714c._.js",
-      "static/chunks/BeUnburdened_admin_dashboard_src_app_admin-dashboard_layout_tsx_485b5dcc._.js",
-      "static/chunks/BeUnburdened_admin_dashboard_src_80ddc528._.js",
-      "static/chunks/a1f0b_8d6df45d._.js",
-      "static/chunks/b5bfb_admin_dashboard_src_app_admin-dashboard_blog-management_page_tsx_11a07262._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_5fb12e17._.js",
-      "static/chunks/a1f0b_next_dist_compiled_react-dom_96ff3ffe._.js",
-      "static/chunks/a1f0b_next_dist_compiled_next-devtools_index_31bbfd6f.js",
-      "static/chunks/a1f0b_next_dist_compiled_be6cc30d._.js",
-      "static/chunks/a1f0b_next_dist_client_34afa538._.js",
-      "static/chunks/a1f0b_next_dist_04ec1581._.js",
-      "static/chunks/a1f0b_@swc_helpers_cjs_2aa3c046._.js",
-      "static/chunks/BeUnburdened_admin_dashboard_a0ff3932._.js",
-      "static/chunks/turbopack-BeUnburdened_admin_dashboard_d078dae3._.js"
+      "static/chunks/d839de8a30d3eb1b.js",
+      "static/chunks/4b6b921b6ea1af83.js",
+      "static/chunks/ed03d488f3ac5443.css",
+      "static/chunks/9c2ed29031fea2ae.js",
+      "static/chunks/3739626d28a28fc8.js",
+      "static/chunks/34ab5f59c703e325.js",
+      "static/chunks/b81e37b4ad6b3558.js",
+      "static/chunks/02e814fdecf51a1b.js",
+      "static/chunks/882dab695f539202.js",
+      "static/chunks/f9dfb83d0dd59786.js",
+      "static/chunks/8a41f3285e957236.js",
+      "static/chunks/638cad64980c2aa3.js",
+      "static/chunks/528950e0df699d8f.js",
+      "static/chunks/d34df1e82c691e2d.js",
+      "static/chunks/cbf1c02b4d0a7967.js",
+      "static/chunks/40e3238e501d15ea.js",
+      "static/chunks/turbopack-2ad01463b6a56b82.js"
     ]
   }
 }
