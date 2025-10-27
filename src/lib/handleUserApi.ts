@@ -41,6 +41,6 @@ export const useGetUserProfile = () => {
       return json.data as UserProfile
     },
     enabled: !!token,
-    staleTime: 1000 * 60 * 5, // cache for 5 minutes
+    // staleTime: 1000 * 60 * 5, // cache for 5 minutes
   })
 }

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":["file:///home/kmsaifullah/Desktop/projects/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/page.tsx"],"sourcesContent":["import { auth } from '@/auth'\nimport { redirect } from 'next/navigation'\n\nexport default async function DashboardPage() {\n  const session = await auth()\n\n  if (!session?.user && session?.user?.role.toLowerCase() !== 'admin') {\n    redirect('/signin')\n  }\n\n  return (\n    <div className=\"space-y-8\">\n      {/* Header */}\n      <header className=\"space-y-3\">\n        <h1 className=\"text-2xl font-semibold text-[#272727]\">Overview</h1>\n        <p className=\"text-[#595959]\">Dashboard</p>\n      </header>\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;;AAAA;AACA;AAAA;;;;AAEe,eAAe;IAC5B,MAAM,UAAU,MAAM,IAAA,mJAAI;IAE1B,IAAI,CAAC,SAAS,QAAQ,SAAS,MAAM,KAAK,kBAAkB,SAAS;QACnE,IAAA,iOAAQ,EAAC;IACX;IAEA,qBACE,8QAAC;QAAI,WAAU;kBAEb,cAAA,8QAAC;YAAO,WAAU;;8BAChB,8QAAC;oBAAG,WAAU;8BAAwC;;;;;;8BACtD,8QAAC;oBAAE,WAAU;8BAAiB;;;;;;;;;;;;;;;;;AAItC","debugId":null}}]
+}
