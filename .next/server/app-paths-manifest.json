@@ -1,4 +1,5 @@
 {
+  "/admin-dashboard/blog-management/page": "app/admin-dashboard/blog-management/page.js",
   "/admin-dashboard/dashboard/page": "app/admin-dashboard/dashboard/page.js",
   "/admin-dashboard/settings/page": "app/admin-dashboard/settings/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",

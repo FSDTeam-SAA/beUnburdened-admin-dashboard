@@ -164,7 +164,7 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="">
       <div className="max-w-full mx-auto p-6">
         {/* Header */}
         <div className="mb-6">
