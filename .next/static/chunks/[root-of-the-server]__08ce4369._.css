@@ -825,6 +825,40 @@
     grid-row-start: 1;
   }
 
+  .container {
+    width: 100%;
+  }
+
+  @media (min-width: 40rem) {
+    .container {
+      max-width: 40rem;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .container {
+      max-width: 48rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .container {
+      max-width: 64rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .container {
+      max-width: 80rem;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .container {
+      max-width: 96rem;
+    }
+  }
+
   .-mx-1 {
     margin-inline: calc(var(--spacing) * -1);
   }
@@ -868,6 +902,14 @@
 
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
+
+  .mt-auto {
+    margin-top: auto;
   }
 
   .mr-2 {
@@ -1009,6 +1051,10 @@
     height: calc(var(--spacing) * 12);
   }
 
+  .h-13 {
+    height: calc(var(--spacing) * 13);
+  }
+
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
@@ -1027,6 +1073,10 @@
 
   .h-\[60px\] {
     height: 60px;
+  }
+
+  .h-\[70px\] {
+    height: 70px;
   }
 
   .h-\[80px\] {
@@ -1143,6 +1193,10 @@
 
   .w-12 {
     width: calc(var(--spacing) * 12);
+  }
+
+  .w-13 {
+    width: calc(var(--spacing) * 13);
   }
 
   .w-14 {
@@ -1683,6 +1737,11 @@
     border-style: dashed;
   }
 
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
+  }
+
   .border-\(--color-border\) {
     border-color: var(--color-border);
   }
@@ -1994,6 +2053,16 @@
     padding-block: calc(var(--spacing) * 12);
   }
 
+  .py-\[13\.5px\] {
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;
+  }
+
+  .py-\[14px\] {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
   .py-\[17\.5px\] {
     padding-top: 17.5px;
     padding-bottom: 17.5px;
@@ -2052,6 +2121,14 @@
 
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
   }
 
   .pl-2 {
@@ -3135,6 +3212,12 @@
     .md\:text-sm {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:mt-20 {
+      margin-top: calc(var(--spacing) * 20);
     }
   }
 

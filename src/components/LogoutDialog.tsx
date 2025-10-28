@@ -26,10 +26,10 @@ export default function LogoutDialog() {
       {/* Logout Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="flex items-center gap-3 px-4 py-3 rounded-lg cursor-pointer transition-all text-[#E53E3E] hover:bg-red-50 w-full"
+        className="flex items-center gap-3 px-6 py-3 rounded-lg cursor-pointer transition-all text-[#E53E3E] hover:bg-red-50 w-full"
       >
-        <LogOut size={20} />
-        <span className="text-sm font-medium">Log Out</span>
+        <LogOut size={22} />
+        <span className="text-base font-medium">Log Out</span>
       </button>
 
       {/* Modal */}

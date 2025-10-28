@@ -17,7 +17,7 @@ export default function UserHeader() {
   const profile = profileResponse?.data
 
   return (
-    <header className="bg-sky-50/50 border-b border-gray-200 px-8 py-[17.5px] flex items-center justify-end">
+    <header className="bg-sky-50/50 border-b border-gray-200 px-8 py-[13.5px] flex items-center justify-end">
       <div className="flex items-center gap-4">
         {isLoading ? (
           <div className="animate-pulse flex items-center gap-3">
@@ -43,7 +43,7 @@ export default function UserHeader() {
                   alt="User Avatar"
                   width={50}
                   height={50}
-                  className="h-14 w-14 rounded-full object-cover border-2 border-gray-200 cursor-pointer hover:border-[#7C4DFF] transition-colors"
+                  className="h-13 w-13 rounded-full object-cover border-2 border-gray-200 cursor-pointer hover:border-[#7C4DFF] transition-colors"
                   onError={(e) => {
                     // If image fails to load, use default avatar
                     const target = e.target as HTMLImageElement

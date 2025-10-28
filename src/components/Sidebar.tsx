@@ -76,8 +76,19 @@ function SidebarItem({
 export default function AdminSidebar() {
   const pathname = usePathname()
 
+  // Robust check for active link
+  const isActiveLink = (href: string) => {
+    if (pathname === href) return true
+    // Split paths by '/' and compare the first 2 segments
+    const pathSegments = pathname.split('/').filter(Boolean)
+    const hrefSegments = href.split('/').filter(Boolean)
+    return (
+      pathSegments[0] === hrefSegments[0] && pathSegments[1] === hrefSegments[1]
+    )
+  }
+
   return (
-    <aside className="w-[260px] bg-sky-50/50 border-r border-gray-200 min-h-screen flex flex-col ">
+    <aside className="w-[260px] bg-sky-50/50 border-r border-gray-200 min-h-screen flex flex-col">
       {/* Logo Section */}
       <div className="h-[80px] flex items-center px-6 border-b border-gray-200">
         <Link href="/admin-dashboard/dashboard">
@@ -91,20 +102,20 @@ export default function AdminSidebar() {
       </div>
 
       {/* Navigation */}
-      <nav className="flex px-4 pt-6 pb-2">
+      <nav className="flex px-4 pt-6  pb-2">
         <div className="space-y-1">
           {sidebarItems.map((item) => (
             <SidebarItem
               key={item.text}
               {...item}
-              active={pathname === item.href}
+              active={isActiveLink(item.href)}
             />
           ))}
         </div>
       </nav>
 
       {/* Logout Section */}
-      <div className=" px-5 text">
+      <div className=" mt-auto pb-3">
         <LogoutDialog />
       </div>
     </aside>

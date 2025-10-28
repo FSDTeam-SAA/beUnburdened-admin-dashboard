@@ -13,7 +13,7 @@ export function MessagesSection() {
     <Card className="mx-auto w-full border border-[#E5E7EB] bg-white shadow-sm rounded-xl">
       <div className="px-5 py-2">
         {/* Header */}
-        <div className="mb-5 flex items-center justify-between">
+        <div className=" flex items-center justify-between">
           <h2 className="text-lg font-semibold text-[#1A1A1A]">Messages</h2>
           <Link
             href="/admin-dashboard/contact-management"
