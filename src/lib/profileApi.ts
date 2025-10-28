@@ -26,6 +26,7 @@ export interface ProfileResponse {
 
 export interface UpdateProfileData {
   fullName?: string
+  username?: string
   bio?: string
   phoneNumber?: string
 }

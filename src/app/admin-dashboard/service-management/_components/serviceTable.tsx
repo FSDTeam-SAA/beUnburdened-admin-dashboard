@@ -254,8 +254,8 @@ export default function ServiceTable({
 
       {/* Pagination */}
       {totalPages > 0 && (
-        <div className="bg-white px-6 py-4 flex items-center justify-between border-t border-gray-200">
-          <div className="flex items-center gap-2 text-sm text-gray-700">
+        <div className="bg-white px-6 py-6 flex items-center justify-between border-t border-gray-200">
+          <div className="flex items-center gap-2 text-base text-gray-600">
             <span>
               Showing page {currentPage} of {totalPages}
             </span>
@@ -263,7 +263,7 @@ export default function ServiceTable({
             <span>{totalData} total services</span>
           </div>
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2">
             {/* Previous Button */}
             <button
               onClick={() => onPageChange(currentPage - 1)}

@@ -11,6 +11,13 @@ import { Textarea } from '@/components/ui/textarea'
 import { Loader2, Upload, X } from 'lucide-react'
 import Image from 'next/image'
 import { Podcast } from '@/lib/podcastApi'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 const podcastSchema = z.object({
   title: z.string().min(1, 'Title is required'),
@@ -44,6 +51,8 @@ export default function PodcastForm({
     register,
     handleSubmit,
     reset,
+    setValue,
+    watch,
     formState: { errors },
   } = useForm<PodcastFormData>({
     resolver: zodResolver(podcastSchema),
@@ -119,7 +128,7 @@ export default function PodcastForm({
           )}
         </div>
 
-        {/* Media Name */}
+        {/* Media Name (Dropdown) */}
         <div>
           <Label
             htmlFor="mediaName"
@@ -127,12 +136,18 @@ export default function PodcastForm({
           >
             Media Name *
           </Label>
-          <Input
-            id="mediaName"
-            placeholder="e.g., Youtube, Spotify"
-            {...register('mediaName')}
-            className="mt-1"
-          />
+          <Select
+            onValueChange={(value) => setValue('mediaName', value)}
+            value={watch('mediaName')}
+          >
+            <SelectTrigger className="mt-1 w-full">
+              <SelectValue placeholder="Select media type" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="YouTube Videos">YouTube Videos</SelectItem>
+              <SelectItem value="Spotify Audios">Spotify Audios</SelectItem>
+            </SelectContent>
+          </Select>
           {errors.mediaName && (
             <p className="text-red-500 text-sm mt-1">
               {errors.mediaName.message}

@@ -622,7 +622,7 @@ function SelectScrollDownButton({ className, ...props }) {
 //   const { data, isLoading, isError, refetch } = useActiveUser(accessToken, selectedYear)
 //   const handleYearChange = (year: string) => {
 //     setSelectedYear(year)
-//     refetch() 
+//     refetch()
 //   }
 //   // ✅ Loading skeleton
 //   if (isLoading) {
@@ -744,7 +744,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$skeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/src/components/ui/skeleton.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/src/components/ui/select.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
 ;
@@ -755,7 +755,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard
 ;
 function ActiveUsers() {
     const { data: session } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSession"])();
-    const accessToken = session?.user?.accessToken || "";
+    const accessToken = session?.user?.accessToken || '';
     const startYear = 2023;
     const currentYear = new Date().getFullYear();
     const years = Array.from({
@@ -776,32 +776,32 @@ function ActiveUsers() {
                         children: "Active Users"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                        lineNumber: 324,
-                        columnNumber: 21
+                        lineNumber: 314,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                    lineNumber: 323,
-                    columnNumber: 17
+                    lineNumber: 313,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$skeleton$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Skeleton"], {
                         className: "h-[300px] w-full"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                        lineNumber: 327,
-                        columnNumber: 21
+                        lineNumber: 317,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                    lineNumber: 326,
-                    columnNumber: 17
+                    lineNumber: 316,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-            lineNumber: 322,
-            columnNumber: 13
+            lineNumber: 312,
+            columnNumber: 7
         }, this);
     }
     if (isError || !data?.data) {
@@ -813,13 +813,13 @@ function ActiveUsers() {
                         children: "Active Users"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                        lineNumber: 337,
-                        columnNumber: 21
+                        lineNumber: 327,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                    lineNumber: 336,
-                    columnNumber: 17
+                    lineNumber: 326,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -827,19 +827,19 @@ function ActiveUsers() {
                         children: "Failed to load data"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                        lineNumber: 340,
-                        columnNumber: 21
+                        lineNumber: 330,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                    lineNumber: 339,
-                    columnNumber: 17
+                    lineNumber: 329,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-            lineNumber: 335,
-            columnNumber: 13
+            lineNumber: 325,
+            columnNumber: 7
         }, this);
     }
     const chartData = data.data.map((item)=>({
@@ -856,8 +856,8 @@ function ActiveUsers() {
                         children: "Active Users"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                        lineNumber: 354,
-                        columnNumber: 17
+                        lineNumber: 348,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Select"], {
                         onValueChange: handleYearChange,
@@ -869,13 +869,13 @@ function ActiveUsers() {
                                     placeholder: "Select Year"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                    lineNumber: 359,
-                                    columnNumber: 25
+                                    lineNumber: 353,
+                                    columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                lineNumber: 358,
-                                columnNumber: 21
+                                lineNumber: 352,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
                                 children: years.map((year)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -883,28 +883,28 @@ function ActiveUsers() {
                                         children: year
                                     }, year, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                        lineNumber: 363,
-                                        columnNumber: 29
+                                        lineNumber: 357,
+                                        columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                lineNumber: 361,
-                                columnNumber: 21
+                                lineNumber: 355,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                        lineNumber: 357,
-                        columnNumber: 17
+                        lineNumber: 351,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                lineNumber: 353,
-                columnNumber: 13
+                lineNumber: 347,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
-                className: "h-[300px] px-2",
+                className: "h-[250px] px-2",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ResponsiveContainer"], {
                     width: "100%",
                     height: "100%",
@@ -931,8 +931,8 @@ function ActiveUsers() {
                                             stopOpacity: 0.4
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                            lineNumber: 379,
-                                            columnNumber: 33
+                                            lineNumber: 373,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
                                             offset: "95%",
@@ -940,27 +940,27 @@ function ActiveUsers() {
                                             stopOpacity: 0
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                            lineNumber: 380,
-                                            columnNumber: 33
+                                            lineNumber: 374,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                    lineNumber: 378,
-                                    columnNumber: 29
+                                    lineNumber: 372,
+                                    columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                lineNumber: 377,
-                                columnNumber: 25
+                                lineNumber: 371,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$CartesianGrid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CartesianGrid"], {
                                 strokeDasharray: "3 3",
                                 vertical: false
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                lineNumber: 383,
-                                columnNumber: 25
+                                lineNumber: 377,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["XAxis"], {
                                 dataKey: "month",
@@ -969,43 +969,43 @@ function ActiveUsers() {
                                 tickMargin: 8,
                                 fontSize: 12,
                                 tick: {
-                                    fill: "#888"
+                                    fill: '#888'
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                lineNumber: 384,
-                                columnNumber: 25
+                                lineNumber: 378,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["YAxis"], {
                                 axisLine: false,
                                 tickLine: false,
                                 fontSize: 12,
                                 tick: {
-                                    fill: "#888"
+                                    fill: '#888'
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
+                                lineNumber: 386,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {
+                                cursor: {
+                                    stroke: '#5A8DEE',
+                                    strokeWidth: 1
+                                },
+                                contentStyle: {
+                                    backgroundColor: 'white',
+                                    border: '1px solid #E2E8F0',
+                                    borderRadius: '6px',
+                                    boxShadow: '0 2px 6px rgba(0,0,0,0.1)'
+                                },
+                                labelStyle: {
+                                    fontWeight: '500'
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
                                 lineNumber: 392,
-                                columnNumber: 25
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {
-                                cursor: {
-                                    stroke: "#5A8DEE",
-                                    strokeWidth: 1
-                                },
-                                contentStyle: {
-                                    backgroundColor: "white",
-                                    border: "1px solid #E2E8F0",
-                                    borderRadius: "6px",
-                                    boxShadow: "0 2px 6px rgba(0,0,0,0.1)"
-                                },
-                                labelStyle: {
-                                    fontWeight: "500"
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                lineNumber: 398,
-                                columnNumber: 25
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Area$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Area"], {
                                 type: "monotone",
@@ -1017,30 +1017,30 @@ function ActiveUsers() {
                                 isAnimationActive: true
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                                lineNumber: 408,
-                                columnNumber: 25
+                                lineNumber: 402,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                        lineNumber: 373,
-                        columnNumber: 21
+                        lineNumber: 367,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                    lineNumber: 372,
-                    columnNumber: 17
+                    lineNumber: 366,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-                lineNumber: 371,
-                columnNumber: 13
+                lineNumber: 365,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/ActiveUsers.tsx",
-        lineNumber: 352,
-        columnNumber: 9
+        lineNumber: 346,
+        columnNumber: 5
     }, this);
 }
 }),
@@ -1057,21 +1057,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/lucide-react/dist/esm/icons/file-text.js [app-ssr] (ecmascript) <export default as FileText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/lucide-react/dist/esm/icons/message-square.js [app-ssr] (ecmascript) <export default as MessageSquare>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/next-auth/react/index.js [app-ssr] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
 ;
 ;
 function DashboardStats() {
     const { data: session } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSession"])();
-    const accessToken = session?.user?.accessToken || "";
+    const accessToken = session?.user?.accessToken || '';
     const getStats = (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$hooks$2f$ApiCalling$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useStats"])(accessToken);
     console.log(getStats.data?.data);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center py-[39px] justify-between rounded-xl border border-gray-200 bg-white px-[24px] shadow-sm",
+                className: "flex items-center py-[24px] justify-between rounded-xl border border-gray-200 bg-white px-[24px] shadow-sm",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center space-x-[24px]",
                     children: [
@@ -1081,12 +1081,12 @@ function DashboardStats() {
                                 className: "h-6 w-6 text-[#5A8DEE]"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                lineNumber: 21,
+                                lineNumber: 18,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                            lineNumber: 20,
+                            lineNumber: 17,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1097,7 +1097,7 @@ function DashboardStats() {
                                     children: "Active Users"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                    lineNumber: 24,
+                                    lineNumber: 21,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1105,24 +1105,24 @@ function DashboardStats() {
                                     children: getStats.data?.data.totalUsers
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 22,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                            lineNumber: 23,
+                            lineNumber: 20,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                    lineNumber: 19,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                lineNumber: 16,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1136,12 +1136,12 @@ function DashboardStats() {
                                 className: "h-6 w-6 text-[#5A8DEE]"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                lineNumber: 35,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                            lineNumber: 34,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1152,7 +1152,7 @@ function DashboardStats() {
                                     children: "Total Blog Posts"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1160,24 +1160,24 @@ function DashboardStats() {
                                     children: getStats.data?.data.totalBlogs
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                            lineNumber: 37,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                    lineNumber: 33,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                lineNumber: 30,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1191,12 +1191,12 @@ function DashboardStats() {
                                 className: "h-6 w-6 text-[#5A8DEE]"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                lineNumber: 48,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                            lineNumber: 47,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1207,7 +1207,7 @@ function DashboardStats() {
                                     children: "Total Messages"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1215,30 +1215,30 @@ function DashboardStats() {
                                     children: getStats.data?.data.totalMessages
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 53,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                            lineNumber: 50,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                    lineNumber: 46,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-                lineNumber: 43,
+                lineNumber: 44,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/StatsCard.tsx",
-        lineNumber: 15,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 }
@@ -1253,7 +1253,9 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/src/components/ui/card.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$hooks$2f$ApiCalling$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/src/hooks/ApiCalling.tsx [app-ssr] (ecmascript)");
-"use client";
+var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
+'use client';
+;
 ;
 ;
 ;
@@ -1263,7 +1265,7 @@ function MessagesSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
         className: "mx-auto w-full border border-[#E5E7EB] bg-white shadow-sm rounded-xl",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "p-6",
+            className: "px-5 py-2",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mb-5 flex items-center justify-between",
@@ -1273,96 +1275,113 @@ function MessagesSection() {
                             children: "Messages"
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                            lineNumber: 21,
+                            lineNumber: 17,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "text-sm font-medium text-[#3B82F6] hover:text-[#2563EB] transition-colors",
-                            children: "See all"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/admin-dashboard/contact-management",
+                            className: "text-sm font-medium text-[#3B82F6] hover:text-[#2563EB] transition-colors ",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "text-base font-medium text-[#3B82F6] hover:text-[#0a8ac5] cursor-pointer hover:underline transition-all 1s",
+                                children: "See All"
+                            }, void 0, false, {
+                                fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
+                                lineNumber: 22,
+                                columnNumber: 13
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                            lineNumber: 22,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                    lineNumber: 20,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     children: messages?.map((message, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "py-4",
+                            className: "py-2",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex  items-start gap-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "min-w-[180px] px-4",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-base font-semibold text-[#1A1A1A] leading-none",
-                                                    children: message.fullName
-                                                }, void 0, false, {
-                                                    fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                                                    lineNumber: 33,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-[#9CA3AF] mt-1",
-                                                    children: message.occupation
-                                                }, void 0, false, {
-                                                    fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                                                    lineNumber: 36,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                            className: "min-w-[180px] px-4 flex items-center gap-4",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                        className: "text-base font-semibold text-[#1A1A1A] leading-none",
+                                                        children: message.fullName
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
+                                                        lineNumber: 35,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-sm text-[#9CA3AF] mt-1",
+                                                        children: message.occupation
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
+                                                        lineNumber: 38,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
+                                                lineNumber: 34,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                                            lineNumber: 32,
+                                            lineNumber: 33,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-[#6B7280] leading-relaxed ",
-                                            children: message.message
-                                        }, void 0, false, {
+                                            className: "text-sm text-[#6B7280] leading-relaxed tracking-wide ",
+                                            children: [
+                                                message.message.slice(0, 50),
+                                                "..."
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                                            lineNumber: 38,
+                                            lineNumber: 43,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 32,
                                     columnNumber: 15
                                 }, this),
                                 index !== messages?.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
                                     className: "mt-4 border-[#E5E7EB]"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 48,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, message._id, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-                    lineNumber: 28,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-            lineNumber: 18,
+            lineNumber: 14,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/dashboard/_components/Contact.tsx",
-        lineNumber: 17,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
