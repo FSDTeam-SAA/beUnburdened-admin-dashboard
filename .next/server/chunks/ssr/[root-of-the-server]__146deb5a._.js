@@ -461,7 +461,7 @@ const useUpdateProfileImage = (accessToken, options)=>{
     const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQueryClient"])();
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMutation"])({
         mutationFn: async (formData)=>{
-            const res = await fetch(`${API_BASE_URL}/user/upload-avatar`, {
+            const res = await fetch(`${API_BASE_URL}/profile/update-profile-image`, {
                 method: 'PUT',
                 body: formData,
                 credentials: 'include',
@@ -600,9 +600,9 @@ function UserHeader() {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 src: profile?.profileImage || '/images/demoUser.png',
                                 alt: "User Avatar",
-                                width: 40,
-                                height: 40,
-                                className: "h-10 w-10 rounded-full object-cover border-2 border-gray-200 cursor-pointer hover:border-[#7C4DFF] transition-colors",
+                                width: 50,
+                                height: 50,
+                                className: "h-14 w-14 rounded-full object-cover border-2 border-gray-200 cursor-pointer hover:border-[#7C4DFF] transition-colors",
                                 onError: (e)=>{
                                     // If image fails to load, use default avatar
                                     const target = e.target;
@@ -610,17 +610,17 @@ function UserHeader() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/components/reusable/UserHeader.tsx",
-                                lineNumber: 42,
+                                lineNumber: 41,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/components/reusable/UserHeader.tsx",
-                            lineNumber: 41,
+                            lineNumber: 40,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/components/reusable/UserHeader.tsx",
-                        lineNumber: 40,
+                        lineNumber: 39,
                         columnNumber: 13
                     }, this)
                 ]

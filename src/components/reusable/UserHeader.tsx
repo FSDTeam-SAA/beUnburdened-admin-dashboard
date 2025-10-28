@@ -36,15 +36,14 @@ export default function UserHeader() {
                 @{profile?.username || profile?.email?.split('@')[0]}
               </p>
             </div>
-
             <Link href="/admin-dashboard/settings">
               <div className="relative">
                 <Image
                   src={profile?.profileImage || '/images/demoUser.png'}
                   alt="User Avatar"
-                  width={40}
-                  height={40}
-                  className="h-10 w-10 rounded-full object-cover border-2 border-gray-200 cursor-pointer hover:border-[#7C4DFF] transition-colors"
+                  width={50}
+                  height={50}
+                  className="h-14 w-14 rounded-full object-cover border-2 border-gray-200 cursor-pointer hover:border-[#7C4DFF] transition-colors"
                   onError={(e) => {
                     // If image fails to load, use default avatar
                     const target = e.target as HTMLImageElement
