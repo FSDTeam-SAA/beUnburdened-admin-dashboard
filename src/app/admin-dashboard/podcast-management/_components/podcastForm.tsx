@@ -18,6 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import { toast } from 'sonner'
 
 const podcastSchema = z.object({
   title: z.string().min(1, 'Title is required'),
@@ -83,12 +84,12 @@ export default function PodcastForm({
     if (!file) return
 
     if (!file.type.startsWith('image/')) {
-      alert('Please select an image file')
+      toast.error('Please select an image file')
       return
     }
 
-    if (file.size > 5 * 1024 * 1024) {
-      alert('Image size should be less than 5MB')
+    if (file.size > 10 * 1024 * 1024) {
+      toast.error('Image size should be less than 10MB')
       return
     }
 
@@ -251,7 +252,7 @@ export default function PodcastForm({
                 Click to upload or drag and drop
               </p>
               <p className="text-xs text-gray-400 mb-4">
-                PNG, JPG, WEBP up to 5MB
+                PNG, JPG, WEBP up to 10MB
               </p>
               <input
                 type="file"

@@ -11,6 +11,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Loader2, Upload, X } from 'lucide-react'
 import Image from 'next/image'
 import { Service } from '@/lib/serviceApi'
+import { toast } from 'sonner'
 
 const serviceSchema = z.object({
   serviceName: z.string().min(1, 'Service name is required'),
@@ -68,12 +69,12 @@ export default function ServiceForm({
     if (!file) return
 
     if (!file.type.startsWith('image/')) {
-      alert('Please select an image file')
+      toast.error('Please select an image file')
       return
     }
 
-    if (file.size > 5 * 1024 * 1024) {
-      alert('Image size should be less than 5MB')
+    if (file.size > 10 * 1024 * 1024) {
+      toast.error('Image size should be less than 10MB')
       return
     }
 
@@ -191,7 +192,7 @@ export default function ServiceForm({
                 Click to upload or drag and drop
               </p>
               <p className="text-xs text-gray-400 mb-4">
-                PNG, JPG, WEBP up to 5MB
+                PNG, JPG, WEBP up to 10MB
               </p>
               <input
                 type="file"

@@ -653,7 +653,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/src/components/ui/select.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/sonner/dist/index.mjs [app-ssr] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -705,11 +707,11 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
         const file = e.target.files?.[0];
         if (!file) return;
         if (!file.type.startsWith('image/')) {
-            alert('Please select an image file');
+            __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error('Please select an image file');
             return;
         }
-        if (file.size > 5 * 1024 * 1024) {
-            alert('Image size should be less than 5MB');
+        if (file.size > 10 * 1024 * 1024) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error('Image size should be less than 10MB');
             return;
         }
         setImageFile(file);
@@ -740,7 +742,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 children: "Title *"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 117,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -750,7 +752,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 className: "mt-1"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 120,
+                                lineNumber: 121,
                                 columnNumber: 11
                             }, this),
                             errors.title && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -758,13 +760,13 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 children: errors.title.message
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 127,
+                                lineNumber: 128,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 116,
+                        lineNumber: 117,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -775,7 +777,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 children: "Media Name *"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 133,
+                                lineNumber: 134,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Select"], {
@@ -788,12 +790,12 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                             placeholder: "Select media type"
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 145,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                        lineNumber: 143,
+                                        lineNumber: 144,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -803,7 +805,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                                 children: "YouTube Videos"
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                                lineNumber: 147,
+                                                lineNumber: 148,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -811,19 +813,19 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                                 children: "Spotify Audios"
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                                lineNumber: 148,
+                                                lineNumber: 149,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                        lineNumber: 146,
+                                        lineNumber: 147,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 139,
+                                lineNumber: 140,
                                 columnNumber: 11
                             }, this),
                             errors.mediaName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -831,19 +833,19 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 children: errors.mediaName.message
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 152,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 132,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                lineNumber: 114,
+                lineNumber: 115,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -857,7 +859,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 children: "Link Name *"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 162,
+                                lineNumber: 163,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -867,7 +869,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 className: "mt-1"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 168,
+                                lineNumber: 169,
                                 columnNumber: 11
                             }, this),
                             errors.linkName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -875,13 +877,13 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 children: errors.linkName.message
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 175,
+                                lineNumber: 176,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 161,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -892,7 +894,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 children: "Link URL"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 183,
+                                lineNumber: 184,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -902,7 +904,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 className: "mt-1"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 189,
+                                lineNumber: 190,
                                 columnNumber: 11
                             }, this),
                             errors.linkUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -910,19 +912,19 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                 children: errors.linkUrl.message
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                lineNumber: 196,
+                                lineNumber: 197,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 182,
+                        lineNumber: 183,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                lineNumber: 159,
+                lineNumber: 160,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -933,7 +935,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                         children: "Description *"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 205,
+                        lineNumber: 206,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -943,7 +945,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                         className: "mt-1 min-h-[120px]"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 211,
+                        lineNumber: 212,
                         columnNumber: 9
                     }, this),
                     errors.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -951,13 +953,13 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                         children: errors.description.message
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 218,
+                        lineNumber: 219,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                lineNumber: 204,
+                lineNumber: 205,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -967,7 +969,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                         children: "Podcast Thumbnail"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 226,
+                        lineNumber: 227,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -983,7 +985,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                     className: "max-h-48 rounded-lg object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                    lineNumber: 232,
+                                    lineNumber: 233,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -994,18 +996,18 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                        lineNumber: 244,
+                                        lineNumber: 245,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                    lineNumber: 239,
+                                    lineNumber: 240,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                            lineNumber: 231,
+                            lineNumber: 232,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
@@ -1013,7 +1015,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                     className: "w-8 h-8 mx-auto text-gray-400 mb-2"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                    lineNumber: 249,
+                                    lineNumber: 250,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1021,15 +1023,15 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                     children: "Click to upload or drag and drop"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                    lineNumber: 250,
+                                    lineNumber: 251,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xs text-gray-400 mb-4",
-                                    children: "PNG, JPG, WEBP up to 5MB"
+                                    children: "PNG, JPG, WEBP up to 10MB"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                    lineNumber: 253,
+                                    lineNumber: 254,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1040,7 +1042,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                     id: "podcast-thumbnail"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                    lineNumber: 256,
+                                    lineNumber: 257,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1050,24 +1052,24 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                     children: "Choose File"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                    lineNumber: 263,
+                                    lineNumber: 264,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                            lineNumber: 248,
+                            lineNumber: 249,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 229,
+                        lineNumber: 230,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                lineNumber: 225,
+                lineNumber: 226,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1083,7 +1085,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                                     className: "w-4 h-4 mr-2 animate-spin"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                                    lineNumber: 286,
+                                    lineNumber: 287,
                                     columnNumber: 15
                                 }, this),
                                 podcast ? 'Updating...' : 'Creating...'
@@ -1091,7 +1093,7 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                         }, void 0, true) : podcast ? 'Update Podcast' : 'Create Podcast'
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 279,
+                        lineNumber: 280,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1102,19 +1104,19 @@ function PodcastForm({ podcast, onSubmit, onCancel, isLoading }) {
                         children: "Cancel"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                        lineNumber: 295,
+                        lineNumber: 296,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-                lineNumber: 278,
+                lineNumber: 279,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastForm.tsx",
-        lineNumber: 113,
+        lineNumber: 114,
         columnNumber: 5
     }, this);
 }

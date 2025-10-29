@@ -241,8 +241,8 @@ function ProfileImageUpload(param) {
             __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error('Please select a valid image file');
             return;
         }
-        if (file.size > 5 * 1024 * 1024) {
-            __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error('Image size should be less than 5MB');
+        if (file.size > 10 * 1024 * 1024) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error('Image size should be less than 10MB');
             return;
         }
         onImageChange(file);
@@ -322,7 +322,7 @@ function ProfileImageUpload(param) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-sm text-gray-500 mt-1",
-                        children: "PNG, JPG up to 5MB"
+                        children: "PNG, JPG up to 10MB"
                     }, void 0, false, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/settings/_components/profileImageUpload.tsx",
                         lineNumber: 76,
