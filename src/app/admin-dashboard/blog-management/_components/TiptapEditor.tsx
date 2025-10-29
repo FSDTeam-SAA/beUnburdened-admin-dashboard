@@ -136,7 +136,7 @@ export default function TiptapEditor({ content, onChange }: TiptapEditorProps) {
       <Toolbar editor={editor} />
 
       {/* Editor content with fixed height and scroll */}
-      <div className="flex-1 overflow-y-auto max-h-[170px]">
+      <div className="flex-1 overflow-y-auto max-h-[370px]">
         <EditorContent
           editor={editor}
           className="p-4 prose max-w-none [&_.ProseMirror]:outline-none"

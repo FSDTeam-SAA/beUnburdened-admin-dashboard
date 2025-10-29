@@ -17,6 +17,8 @@ import Image from 'next/image'
 import BlogTable from './blogTable'
 import { Blog } from '../../../../../types/blog'
 import { useSession } from 'next-auth/react'
+import { QueryClient } from '@tanstack/react-query'
+import { toast } from 'sonner'
 
 export default function BlogManagement() {
   const router = useRouter()
@@ -60,18 +62,13 @@ export default function BlogManagement() {
   }
 
   const handleDeleteBlog = (blogId: string) => {
-    if (
-      confirm(
-        'Are you sure you want to delete this blog? This action cannot be undone.'
-      )
-    ) {
-      deleteBlog(blogId, {
-        onSuccess: () => {
-          // Refresh the data
-          refetch()
-        },
-      })
-    }
+    deleteBlog(blogId, {
+      onSuccess: () => {
+        // Refresh the data
+        // refetch()
+        toast.success('blog deleted successfully')
+      },
+    })
   }
 
   const handlePageChange = (page: number) => {

@@ -2,14 +2,14 @@
 
 import { LogOut, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { signOut } from 'next-auth/react' // ✅ Import signOut
+import { signOut } from 'next-auth/react' // Import signOut
 
 export default function LogoutDialog() {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleLogout = async () => {
     setIsOpen(false)
-    await signOut({ callbackUrl: '/signin' }) // ✅ Logs out and redirects to /signin
+    await signOut({ callbackUrl: '/signin' }) // Logs out and redirects to /signin
   }
 
   // Prevent body scroll when modal is open
