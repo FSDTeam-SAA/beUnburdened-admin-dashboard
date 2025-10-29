@@ -770,9 +770,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/src/components/ui/dialog.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/src/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$reusable$2f$TableSkeleton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/src/components/reusable/TableSkeleton.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/BeUnburdened_admin_dashboard/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -803,7 +805,7 @@ function PodcastTable(param) {
         return(//
         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$reusable$2f$TableSkeleton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-            lineNumber: 70,
+            lineNumber: 71,
             columnNumber: 7
         }, this));
     }
@@ -816,7 +818,7 @@ function PodcastTable(param) {
                     children: "No podcasts found"
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                    lineNumber: 77,
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -824,13 +826,13 @@ function PodcastTable(param) {
                     children: "Create your first podcast to get started"
                 }, void 0, false, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                    lineNumber: 78,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-            lineNumber: 76,
+            lineNumber: 77,
             columnNumber: 7
         }, this);
     }
@@ -879,7 +881,7 @@ function PodcastTable(param) {
                                         children: "Thumbnail"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 121,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -887,7 +889,7 @@ function PodcastTable(param) {
                                         children: "Title"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 124,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -895,7 +897,7 @@ function PodcastTable(param) {
                                         children: "Media Name"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                        lineNumber: 126,
+                                        lineNumber: 127,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -903,7 +905,7 @@ function PodcastTable(param) {
                                         children: "Link"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 130,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -911,7 +913,7 @@ function PodcastTable(param) {
                                         children: "Date"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                        lineNumber: 132,
+                                        lineNumber: 133,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -919,18 +921,18 @@ function PodcastTable(param) {
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 136,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                lineNumber: 119,
+                                lineNumber: 120,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                            lineNumber: 118,
+                            lineNumber: 119,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -950,7 +952,7 @@ function PodcastTable(param) {
                                                     sizes: "64px"
                                                 }, void 0, false, {
                                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                    lineNumber: 150,
+                                                    lineNumber: 151,
                                                     columnNumber: 23
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-full h-full bg-gray-100 flex items-center justify-center text-gray-400",
@@ -959,22 +961,22 @@ function PodcastTable(param) {
                                                         children: "No Image"
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                        lineNumber: 159,
+                                                        lineNumber: 160,
                                                         columnNumber: 25
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                    lineNumber: 158,
+                                                    lineNumber: 159,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                lineNumber: 148,
+                                                lineNumber: 149,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                            lineNumber: 147,
+                                            lineNumber: 148,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -986,17 +988,17 @@ function PodcastTable(param) {
                                                     children: podcast.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                    lineNumber: 168,
+                                                    lineNumber: 169,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                lineNumber: 167,
+                                                lineNumber: 168,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                            lineNumber: 166,
+                                            lineNumber: 167,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1006,17 +1008,17 @@ function PodcastTable(param) {
                                                 children: podcast.mediaName || '-'
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                lineNumber: 176,
+                                                lineNumber: 177,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 176,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                             className: "px-6 py-4 text-sm text-gray-600",
-                                            children: podcast.linkUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            children: podcast.linkUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: podcast.linkUrl,
                                                 target: "_blank",
                                                 rel: "noopener noreferrer",
@@ -1027,32 +1029,32 @@ function PodcastTable(param) {
                                                         children: podcast.linkName || 'Visit Link'
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                        lineNumber: 190,
+                                                        lineNumber: 191,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
                                                         className: "w-3 h-3 flex-shrink-0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                        lineNumber: 193,
+                                                        lineNumber: 194,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                lineNumber: 184,
+                                                lineNumber: 185,
                                                 columnNumber: 21
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-gray-400",
                                                 children: "No link"
                                             }, void 0, false, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                lineNumber: 196,
+                                                lineNumber: 197,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                            lineNumber: 182,
+                                            lineNumber: 183,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1064,7 +1066,7 @@ function PodcastTable(param) {
                                             }) : '-'
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                            lineNumber: 201,
+                                            lineNumber: 202,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1080,12 +1082,12 @@ function PodcastTable(param) {
                                                             className: "w-5 h-5 cursor-pointer"
                                                         }, void 0, false, {
                                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                            lineNumber: 219,
+                                                            lineNumber: 220,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                        lineNumber: 214,
+                                                        lineNumber: 215,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1096,12 +1098,12 @@ function PodcastTable(param) {
                                                             className: "w-5 h-5 cursor-pointer"
                                                         }, void 0, false, {
                                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                            lineNumber: 227,
+                                                            lineNumber: 228,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                        lineNumber: 222,
+                                                        lineNumber: 223,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1112,45 +1114,45 @@ function PodcastTable(param) {
                                                             className: "w-5 h-5 cursor-pointer"
                                                         }, void 0, false, {
                                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                            lineNumber: 235,
+                                                            lineNumber: 236,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                        lineNumber: 230,
+                                                        lineNumber: 231,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                                lineNumber: 213,
+                                                lineNumber: 214,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                            lineNumber: 212,
+                                            lineNumber: 213,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, podcast._id, true, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 143,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                            lineNumber: 140,
+                            lineNumber: 141,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                    lineNumber: 117,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                lineNumber: 116,
+                lineNumber: 117,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
@@ -1164,7 +1166,7 @@ function PodcastTable(param) {
                                     children: "Confirm Deletion"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                    lineNumber: 249,
+                                    lineNumber: 250,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -1175,13 +1177,13 @@ function PodcastTable(param) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                    lineNumber: 250,
+                                    lineNumber: 251,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                            lineNumber: 248,
+                            lineNumber: 249,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogFooter"], {
@@ -1194,12 +1196,12 @@ function PodcastTable(param) {
                                         children: "Cancel"
                                     }, void 0, false, {
                                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 258,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                    lineNumber: 256,
+                                    lineNumber: 257,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1208,24 +1210,24 @@ function PodcastTable(param) {
                                     children: "Confirm Delete"
                                 }, void 0, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                    lineNumber: 261,
+                                    lineNumber: 262,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                            lineNumber: 255,
+                            lineNumber: 256,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                    lineNumber: 247,
+                    lineNumber: 248,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                lineNumber: 246,
+                lineNumber: 247,
                 columnNumber: 7
             }, this),
             totalPages > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1243,7 +1245,7 @@ function PodcastTable(param) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                lineNumber: 272,
+                                lineNumber: 273,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1251,7 +1253,7 @@ function PodcastTable(param) {
                                 children: "•"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                lineNumber: 275,
+                                lineNumber: 276,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1261,13 +1263,13 @@ function PodcastTable(param) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                lineNumber: 276,
+                                lineNumber: 277,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                        lineNumber: 271,
+                        lineNumber: 272,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1280,7 +1282,7 @@ function PodcastTable(param) {
                                 children: "Previous"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                lineNumber: 281,
+                                lineNumber: 282,
                                 columnNumber: 13
                             }, this),
                             getPageNumbers().map((page, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1290,7 +1292,7 @@ function PodcastTable(param) {
                                     children: page
                                 }, index, false, {
                                     fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                    lineNumber: 295,
+                                    lineNumber: 296,
                                     columnNumber: 15
                                 }, this)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$BeUnburdened_admin_dashboard$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1300,25 +1302,25 @@ function PodcastTable(param) {
                                 children: "Next"
                             }, void 0, false, {
                                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                                lineNumber: 312,
+                                lineNumber: 313,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                        lineNumber: 279,
+                        lineNumber: 280,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-                lineNumber: 270,
+                lineNumber: 271,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/BeUnburdened_admin_dashboard/src/app/admin-dashboard/podcast-management/_components/podcastTable.tsx",
-        lineNumber: 114,
+        lineNumber: 115,
         columnNumber: 5
     }, this);
 }

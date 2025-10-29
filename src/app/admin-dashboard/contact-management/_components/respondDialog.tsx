@@ -14,6 +14,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Loader2 } from 'lucide-react'
 import { Contact, useUpdateContactStatus } from '@/lib/contactApi'
+import { toast } from 'sonner'
 
 interface RespondDialogProps {
   contact: Contact | null
@@ -40,6 +41,7 @@ export default function RespondDialog({
         setResponseMessage('')
         setError('')
         onSuccess()
+        toast.success('Response sent successfully!')
       },
       onError: (err: Error) => {
         setError(err.message || 'Failed to send response')

@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 import TableSkeleton from '@/components/reusable/TableSkeleton'
+import Link from 'next/link'
 
 interface PodcastTableProps {
   podcasts: Podcast[]
@@ -181,7 +182,7 @@ export default function PodcastTable({
                 {/* Link */}
                 <td className="px-6 py-4 text-sm text-gray-600">
                   {podcast.linkUrl ? (
-                    <a
+                    <Link
                       href={podcast.linkUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -191,7 +192,7 @@ export default function PodcastTable({
                         {podcast.linkName || 'Visit Link'}
                       </span>
                       <ExternalLink className="w-3 h-3 flex-shrink-0" />
-                    </a>
+                    </Link>
                   ) : (
                     <span className="text-gray-400">No link</span>
                   )}
