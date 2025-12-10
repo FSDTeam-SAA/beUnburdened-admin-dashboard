@@ -24,18 +24,24 @@ export default async function RootLayout({
   console.log('admin-dashboard session:', session)
 
   return (
-    <div className="bg-[#F8F9FC] min-h-screen flex">
-      {/* Sidebar */}
-      <Sidebar />
+    <div className="bg-[#F8F9FC] h-screen w-full flex overflow-hidden">
+      {/* Fixed Sidebar */}
+      <div className="fixed left-0 top-0 h-full w-[260px]">
+        <Sidebar />
+      </div>
 
-      {/* Main Content */}
-      <main className="flex-1 flex flex-col">
-        {/* Top Header */}
-        <UserHeader />
+      {/* Main Area (push right by sidebar width) */}
+      <div className="flex-1 ml-[260px] flex flex-col h-full">
+        {/* Fixed Header */}
+        <div className="fixed top-0 left-[260px] right-0 z-50">
+          <UserHeader />
+        </div>
 
-        {/* Page Content */}
-        <div className="flex-1 px-8 pt-4">{children}</div>
-      </main>
+        {/* Scrollable Page Content */}
+        <div className="flex-1 mt-[80px] overflow-y-auto px-8 pt-4 pb-8">
+          {children}
+        </div>
+      </div>
     </div>
   )
 }

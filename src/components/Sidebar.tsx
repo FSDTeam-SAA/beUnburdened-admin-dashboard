@@ -60,7 +60,7 @@ function SidebarItem({
   return (
     <Link href={href}>
       <div
-        className={`flex items-center gap-3 px-4 py-[18px] rounded-lg cursor-pointer transition-all ${
+        className={`flex items-center gap-3 mb-2 px-4 py-[18px] rounded-lg cursor-pointer transition-all ${
           active
             ? 'bg-[#d6e6f7] text-[#5A8DEE]'
             : 'text-[#4A5568] hover:bg-[#e3f2fd]'
@@ -88,7 +88,7 @@ export default function AdminSidebar() {
   }
 
   return (
-    <aside className="w-[260px] bg-sky-50/50 border-r border-gray-200 min-h-screen flex flex-col">
+    <aside className="w-full h-full bg-sky-50/50 border-r border-gray-200 flex flex-col">
       {/* Logo Section */}
       <div className="h-[80px] flex items-center px-6 border-b border-gray-200">
         <Link href="/admin-dashboard/dashboard">
@@ -102,9 +102,9 @@ export default function AdminSidebar() {
       </div>
 
       {/* Navigation */}
-      <nav className="flex px-4 pt-6  pb-2">
+      <nav className="flex px-4 pt-6  pb-2 ">
         <div className="space-y-1">
-          {sidebarItems.map((item) => (
+          {sidebarItems.map(item => (
             <SidebarItem
               key={item.text}
               {...item}

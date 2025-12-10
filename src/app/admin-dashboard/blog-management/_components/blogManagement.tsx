@@ -17,6 +17,7 @@ import Image from 'next/image'
 import BlogTable from './blogTable'
 import { Blog } from '../../../../../types/blog'
 import { useSession } from 'next-auth/react'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { QueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
@@ -179,7 +180,7 @@ export default function BlogManagement() {
                           year: 'numeric',
                           month: 'long',
                           day: 'numeric',
-                        }
+                        },
                       )}
                     </span>
                     <span
