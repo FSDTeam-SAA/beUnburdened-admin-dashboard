@@ -36,10 +36,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/admin-dashboard/blog-management/page.js"
     ],
-    "/admin-dashboard/service-management/page": [
+    "/admin-dashboard/settings/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin-dashboard/service-management/page.js"
+      "static/chunks/app/admin-dashboard/settings/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
