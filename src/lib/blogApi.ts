@@ -2,8 +2,7 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { BlogsResponse, SingleBlogResponse } from '../../types/blog'
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api/v1'
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL
 
 // ✅ Helper to handle responses
 async function handleResponse(response: Response) {
@@ -69,7 +68,7 @@ export const useAddBlog = (accessToken: string, options?: any) => {
       queryClient.invalidateQueries({ queryKey: ['blogs'] })
       options?.onSuccess?.()
     },
-    onError: (error) => {
+    onError: error => {
       options?.onError?.(error)
     },
   })
@@ -96,7 +95,7 @@ export const useUpdateBlog = (accessToken: string, options?: any) => {
       queryClient.invalidateQueries({ queryKey: ['blog'] })
       options?.onSuccess?.()
     },
-    onError: (error) => {
+    onError: error => {
       options?.onError?.(error)
     },
   })
