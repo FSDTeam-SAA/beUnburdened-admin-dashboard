@@ -1,3 +1,0 @@
-module.exports=[93695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},62212,a=>{a.n(a.i(66114))},20325,a=>{a.n(a.i(46780))},56979,(a,b,c)=>{},99444,a=>{"use strict";a.s(["default",()=>d]);var b=a.i(77607);a.i(70396);var c=a.i(73727);async function d(){let a=await (0,b.auth)();if(console.log("users role::",a),a?.user&&a?.user?.role.toLowerCase()!=="admin")return(0,c.redirect)("/signin");(0,c.redirect)("/admin-dashboard/dashboard")}}];
-
-//# sourceMappingURL=%5Broot-of-the-server%5D__79179faa._.js.map
